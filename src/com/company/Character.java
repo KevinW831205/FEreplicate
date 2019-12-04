@@ -1,6 +1,6 @@
 package com.company;
 
-abstract class Character {
+public class Character {
     private String name;
     private CharacterClass characterClass;
     private Inventory inventory;
@@ -9,7 +9,7 @@ abstract class Character {
     public Character(String name, CharacterClass characterClass, Inventory inventory, Stats stats) {
         this.name = name;
         this.characterClass = characterClass;
-        this.inventroy = inventroy;
+        this.inventory = inventory;
         this.stats = stats;
     }
 }
