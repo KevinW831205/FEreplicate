@@ -8,6 +8,7 @@ public class Commoner implements CharacterClass {
     boolean beenPromoted;
     private int classXP;
     private int maxClassXP;
+    private int tier = 1;
 
     public Commoner() {
         beenPromoted = false;
