@@ -1,6 +1,6 @@
 package com.company;
 
-public class Character {
+ abstract public class Character implements CharacterClass{
     private String name;
     private CharacterClass characterClass;
     private Inventory inventory;
