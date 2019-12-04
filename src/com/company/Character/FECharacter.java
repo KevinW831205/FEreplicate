@@ -36,4 +36,16 @@ public class FECharacter {
     public Stats getStats() {
         return stats;
     }
+
+    public void addPromotedClass(CharacterClass promotedClass){
+        if(!promotedClasses.contains(promotedClass)){
+            promotedClasses.add(promotedClass);
+        }
+    }
+
+    public void changeClass(CharacterClass toChange){
+        if(promotedClasses.contains(toChange)){
+            characterClass = toChange;
+        }
+    }
 }
