@@ -1,9 +1,9 @@
-package com.company;
+package com.company.Character;
 
 import java.util.ArrayList;
 
 public class Inventory {
-    ArrayList<item> slots;
+    ArrayList<Item> slots;
 
     public Inventory() {
 

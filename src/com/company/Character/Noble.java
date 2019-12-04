@@ -1,9 +1,9 @@
-package com.company;
+package com.company.Character;
 
 public class Noble implements CharacterClass {
 
     @Override
-    public void promoteClass(CharacterClass promotingTo) {
+    public void changeClass(CharacterClass promotingTo) {
 
     }
 
