@@ -1,8 +1,7 @@
 package com.company;
 
-import com.company.Character.Commoner;
+import com.company.Character.CharacterClass.Commoner;
 import com.company.Character.FECharacter;
-import com.company.Character.Noble;
 
 public class Main {
 

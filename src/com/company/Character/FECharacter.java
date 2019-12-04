@@ -1,5 +1,8 @@
 package com.company.Character;
 
+import com.company.Character.CharacterClass.CharacterClass;
+import com.company.Character.CharacterClass.Commoner;
+
 public class FECharacter {
     private String name;
     private CharacterClass characterClass;
