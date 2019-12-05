@@ -2,7 +2,8 @@ package com.github.kevinw831205.Character;
 
 public class Stats {
 
-    private Integer healthPoint;
+    private Integer maxHealthPoint;
+    private Integer currentHP;
     private Integer strength;
     private Integer magic;
     private Integer dexterity;
@@ -14,11 +15,11 @@ public class Stats {
 
 
     public void addStats(Stats stats){
-        s;
+
     }
 
-    public Integer getHealthPoint() {
-        return healthPoint;
+    public Integer getMaxHealthPoint() {
+        return maxHealthPoint;
     }
 
     public Integer getStrength() {
