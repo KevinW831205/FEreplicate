@@ -12,7 +12,7 @@ public class FECharacter {
     private Inventory inventory;
     private ArrayList<Object> changeableClass;
     private WeaponLevel weaponLevel;
-    private Boolean isAlive;
+    private boolean isAlive;
     
 
     public FECharacter(String name) {

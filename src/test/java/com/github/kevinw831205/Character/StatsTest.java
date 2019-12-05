@@ -5,12 +5,8 @@ import org.junit.Test;
 
 public class StatsTest {
 
-    public void test(String inputName, String expectedName){
-
+    public void test(int actual, int expected){
         Stats instance = new Stats();
-
-        String actualName = instance.getName();
-        Assert.assertEquals(actualName,expectedName);
     }
 
 

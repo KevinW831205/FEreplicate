@@ -2,18 +2,20 @@ package com.github.kevinw831205.Character;
 
 public class Stats {
 
-    Integer
-    Integer healthPoint;
-    Integer strength;
-    Integer magic;
-    Integer dexterity;
-    Integer speed;
-    Integer luck;
-    Integer defense;
-    Integer resistance;
-    Integer charm;
+    private Integer healthPoint;
+    private Integer strength;
+    private Integer magic;
+    private Integer dexterity;
+    private Integer speed;
+    private Integer luck;
+    private Integer defense;
+    private Integer resistance;
+    private Integer charm;
 
 
+    public void addStats(Stats stats){
+        s;
+    }
 
     public Integer getHealthPoint() {
         return healthPoint;
