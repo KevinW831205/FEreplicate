@@ -1,9 +1,7 @@
 package com.github.kevinw831205.Character;
 
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
-import com.github.kevinw831205.Character.CharacterClass.Soldier;
-import com.github.kevinw831205.Character.Weapon.WeaponLevel;
-import javafx.collections.transformation.SortedList;
+import com.github.kevinw831205.Character.Weapon.WeaponSkillLevel;
 
 import java.util.ArrayList;
 
@@ -13,17 +11,17 @@ public class FECharacter {
     private Stats stats;
     private Inventory inventory;
     public ArrayList<CharacterClass> changeableClass;
-    private WeaponLevel weaponLevel;
+    private WeaponSkillLevel weaponSkillLevel;
     private Integer currentHP;
     private boolean isAlive;
     private Gender gender;
 
-    public FECharacter(String name, CharacterClass cClass, Stats stats, Inventory inventory, WeaponLevel weaponLevel, Gender gender) {
+    public FECharacter(String name, CharacterClass cClass, Stats stats, Inventory inventory, WeaponSkillLevel weaponSkillLevel, Gender gender) {
         this.name = name;
         this.cClass = cClass;
         this.stats = stats;
         this.inventory = inventory;
-        this.weaponLevel = weaponLevel;
+        this.weaponSkillLevel = weaponSkillLevel;
         this.gender = gender;
     }
 
