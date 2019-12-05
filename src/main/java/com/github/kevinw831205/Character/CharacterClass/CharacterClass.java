@@ -1,4 +1,5 @@
 package com.github.kevinw831205.Character.CharacterClass;
 
-public class CharacterClass {
+abstract public class CharacterClass {
+
 }

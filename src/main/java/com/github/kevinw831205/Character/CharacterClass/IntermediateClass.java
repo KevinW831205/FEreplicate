@@ -1,4 +1,4 @@
 package com.github.kevinw831205.Character.CharacterClass;
 
-public class Commoner extends UniqueClass {
+abstract public class IntermediateClass {
 }
