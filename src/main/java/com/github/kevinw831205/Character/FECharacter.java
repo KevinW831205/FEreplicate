@@ -12,20 +12,28 @@ public class FECharacter {
     private CharacterClass cClass;
     private Stats stats;
     private Inventory inventory;
-    private ArrayList<CharacterClass> changeableClass;
+    public ArrayList<CharacterClass> changeableClass;
     private WeaponLevel weaponLevel;
     private Integer currentHP;
     private boolean isAlive;
     private Gender gender;
 
+    public FECharacter(String name, CharacterClass cClass, Stats stats, Inventory inventory, WeaponLevel weaponLevel, Gender gender) {
+        this.name = name;
+        this.cClass = cClass;
+        this.stats = stats;
+        this.inventory = inventory;
+        this.weaponLevel = weaponLevel;
+        this.gender = gender;
+    }
 
     public FECharacter(String name) {
         this.name = name;
     }
 
-
-
     public String getName() {
         return name;
     }
+
+
 }

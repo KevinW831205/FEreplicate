@@ -1,4 +1,4 @@
-package com.github.kevinw831205.Character.CharacterClass;
+package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
 public class Nobel extends UniqueClass {
 
