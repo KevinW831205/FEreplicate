@@ -20,7 +20,6 @@ public class Stats {
 
     public void levelUp(){
         this.level++;
-
     }
 
     public void addStats(Stats stats){
