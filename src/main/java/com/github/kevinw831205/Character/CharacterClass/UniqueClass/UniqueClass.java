@@ -14,5 +14,4 @@ abstract public class UniqueClass implements CharacterClass, Mastery {
     GrowthRate classGrowthRate;
 
 
-
 }

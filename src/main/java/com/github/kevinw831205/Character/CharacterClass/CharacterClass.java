@@ -6,5 +6,4 @@ public interface CharacterClass {
     public String getClassName();
     public void mastered();
     public GrowthRate getBaseGrowthRate();
-
  }

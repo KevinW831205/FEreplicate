@@ -1,7 +1,7 @@
 package com.github.kevinw831205.Character;
 
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
-import com.github.kevinw831205.Character.Weapon.WeaponSkillLevel;
+import com.github.kevinw831205.Character.CharacterClass.WeaponSkillLevel;
 
 import java.util.ArrayList;
 

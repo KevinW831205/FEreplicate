@@ -6,8 +6,6 @@ import com.github.kevinw831205.Character.GrowthRate;
 
 public class Nobel extends UniqueClass {
 
-
-
     @Override
     public String getClassName() {
         return null;
