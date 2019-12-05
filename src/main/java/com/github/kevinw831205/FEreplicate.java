@@ -11,6 +11,7 @@ public class FEreplicate {
     public static void main(String[] args) {
         System.out.println(1);
 
+        /*
         FECharacter byleth = new FECharacter(
                 "Byleth",
                 new Commoner(null, null, null, null),
@@ -23,19 +24,21 @@ public class FEreplicate {
 
         byleth.changeableClass.add(soldier);
 
+         */
+
     }
 
-    public static void main(String[] args) {
-        String ss = new StringBuilder()
-                .append("Welcome to my application!\n")
-                .append("From here, you can elect ay of the following optios")
-                .toString();
-
-
-        Stats s = new StatsBuilder()
-                .setCharm(0)
-                .setDexterity(1)
-                .setLuck(2)
-                .createStats();
-    }
+//    public static void main(String[] args) {
+//        String ss = new StringBuilder()
+//                .append("Welcome to my application!\n")
+//                .append("From here, you can elect ay of the following optios")
+//                .toString();
+//
+//
+//        Stats s = new StatsBuilder()
+//                .setCharm(0)
+//                .setDexterity(1)
+//                .setLuck(2)
+//                .createStats();
+//    }
 }

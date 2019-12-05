@@ -34,8 +34,9 @@ public class Commoner extends UniqueClass {
 
     }
 
+
     @Override
-    public Stats getBaseGrowthRate() {
-        return null;
+    public GrowthRate getBaseGrowthRate() {
+        return classGrowthRate;
     }
 }

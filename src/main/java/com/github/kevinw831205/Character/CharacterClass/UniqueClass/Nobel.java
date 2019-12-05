@@ -21,7 +21,7 @@ public class Nobel extends UniqueClass {
     }
 
     @Override
-    public Stats getBaseGrowthRate() {
+    public GrowthRate getBaseGrowthRate() {
         return null;
     }
 

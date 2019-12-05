@@ -1,11 +1,12 @@
 package com.github.kevinw831205.Character.CharacterClass.Masteries;
 
-public class Mastery implements Masterable {
-    MasteryEffect effect;
-    boolean isMastered;
+import com.github.kevinw831205.Character.CharacterClass.Masteries.MasterAbility.MasterAbility;
+import com.github.kevinw831205.Character.CharacterClass.Masteries.MasterArt.MasterArt;
 
-    @Override
-    public void mastered() {
+public interface Mastery {
 
-    }
+    MasterAbility getMasteredAbility();
+    MasterArt getMasteredArt();
+    void Mastered();
+
 }

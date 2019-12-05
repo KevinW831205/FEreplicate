@@ -22,4 +22,5 @@ abstract public class UniqueClass implements CharacterClass {
         this.baseStats = baseStats;
         this.classGrowthRate = classGrowthRate;
     }
+
 }
