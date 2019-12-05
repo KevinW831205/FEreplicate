@@ -1,7 +1,7 @@
 package com.github.kevinw831205.Character;
 
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
-import com.github.kevinw831205.Character.CharacterClass.WeaponSkillLevel;
+import com.github.kevinw831205.Character.CharacterClass.WeaponSkillLevel.WeaponSkillLevel;
 
 import java.util.ArrayList;
 
@@ -33,10 +33,10 @@ public class FECharacter {
         return name;
     }
 
-    public void switchClass(CharacterClass current, CharacterClass target){
+    public void switchClass(CharacterClass target){
 
     }
 
-    //sdfs
+
 
 }
