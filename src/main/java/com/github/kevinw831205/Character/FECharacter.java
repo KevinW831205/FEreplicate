@@ -1,5 +1,7 @@
 package com.github.kevinw831205.Character;
 
+import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
+
 import java.util.ArrayList;
 
 public class FECharacter {
