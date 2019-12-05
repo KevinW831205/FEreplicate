@@ -4,8 +4,15 @@ import com.github.kevinw831205.Character.Stats;
 
 public class Commoner extends UniqueClass {
 
+    Stats baseStats;
 
-    Stats statBonus;
+    @Override
+    public String getClassName() {
+        return this.className;
+    }
 
+    @Override
+    public void classLevelUp() {
 
+    }
 }
