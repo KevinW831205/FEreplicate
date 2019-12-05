@@ -12,6 +12,20 @@ public class Stats {
     private Integer defense;
     private Integer resistance;
     private Integer charm;
+
+    public Stats(Integer level, Integer maxHP, Integer strength, Integer magic, Integer dexterity, Integer speed, Integer luck, Integer defense, Integer resistance, Integer charm) {
+        this.level = level;
+        this.maxHP = maxHP;
+        this.strength = strength;
+        this.magic = magic;
+        this.dexterity = dexterity;
+        this.speed = speed;
+        this.luck = luck;
+        this.defense = defense;
+        this.resistance = resistance;
+        this.charm = charm;
+    }
+
     private final GrowthRate growthRate = null;
 
     public Integer getLevel() {
