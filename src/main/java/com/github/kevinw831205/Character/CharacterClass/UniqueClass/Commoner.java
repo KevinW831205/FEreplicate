@@ -11,7 +11,7 @@ public class Commoner extends UniqueClass {
     Integer minLevel;
     Stats baseStats;
 
-    public Commoner( Mastery mastery, Integer classXP, Integer minLevel, Stats baseStats) {
+    public Commoner(Mastery mastery, Integer classXP, Integer minLevel, Stats baseStats) {
         super("commoner", mastery, classXP, minLevel, baseStats);
     }
 

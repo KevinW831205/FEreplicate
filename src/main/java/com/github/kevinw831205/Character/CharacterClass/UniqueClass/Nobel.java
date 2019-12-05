@@ -1,6 +1,13 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
+import com.github.kevinw831205.Character.CharacterClass.Mastery;
+import com.github.kevinw831205.Character.Stats;
+
 public class Nobel extends UniqueClass {
+
+    public Nobel(String className, Mastery mastery, Integer classXP, Integer minLevel, Stats baseStats) {
+        super(className, mastery, classXP, minLevel, baseStats);
+    }
 
     @Override
     public String getClassName() {
@@ -9,6 +16,11 @@ public class Nobel extends UniqueClass {
 
     @Override
     public void classLevelUp() {
+
+    }
+
+    @Override
+    public void mastered() {
 
     }
 }

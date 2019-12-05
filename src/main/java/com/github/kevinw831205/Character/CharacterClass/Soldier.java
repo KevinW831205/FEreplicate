@@ -12,5 +12,10 @@ public class Soldier extends BeginnerClass {
     public void classLevelUp() {
 
     }
+
+    @Override
+    public void mastered() {
+
+    }
 }
 

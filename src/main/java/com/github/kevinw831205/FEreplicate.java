@@ -21,7 +21,5 @@ public class FEreplicate {
 
         byleth.changeableClass.add(soldier);
 
-
-
     }
 }
