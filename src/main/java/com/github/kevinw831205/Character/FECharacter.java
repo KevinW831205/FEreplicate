@@ -16,6 +16,7 @@ public class FECharacter {
     private WeaponLevel weaponLevel;
     private Integer currentHP;
     private boolean isAlive;
+    private Gender gender;
 
 
     public FECharacter(String name) {
