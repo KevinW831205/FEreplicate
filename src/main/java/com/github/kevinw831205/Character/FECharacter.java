@@ -1,6 +1,7 @@
 package com.github.kevinw831205.Character;
 
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
+import com.github.kevinw831205.Character.Weapon.WeaponLevel;
 
 import java.util.ArrayList;
 
@@ -10,6 +11,7 @@ public class FECharacter {
     private Stats stats;
     private Inventory inventory;
     private ArrayList<Object> changeableClass;
+    private WeaponLevel weaponLevel;
     
 
     public FECharacter(String name) {
