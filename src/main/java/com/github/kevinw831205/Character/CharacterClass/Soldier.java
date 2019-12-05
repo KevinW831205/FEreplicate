@@ -1,6 +1,6 @@
 package com.github.kevinw831205.Character.CharacterClass;
 
-import com.github.kevinw831205.Character.Stats;
+import com.github.kevinw831205.Character.GrowthRate;
 
 public class Soldier extends BeginnerClass {
 
@@ -11,17 +11,12 @@ public class Soldier extends BeginnerClass {
     }
 
     @Override
-    public void classLevelUp() {
-
-    }
-
-    @Override
     public void mastered() {
 
     }
 
     @Override
-    public Stats getBaseGrowthRate() {
+    public GrowthRate getBaseGrowthRate() {
         return null;
     }
 }

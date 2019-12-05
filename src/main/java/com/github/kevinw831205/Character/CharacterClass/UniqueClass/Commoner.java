@@ -10,7 +10,6 @@ public class Commoner extends UniqueClass {
 
     String className;
     Mastery mastery;
-    Integer xp;
     Integer minLevel;
     Stats baseStats;
     GrowthRate classGrowthRate;
