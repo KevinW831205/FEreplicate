@@ -1,5 +1,6 @@
 package com.github.kevinw831205;
 
+import com.github.kevinw831205.Character.ChangeableClass;
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
 import com.github.kevinw831205.Character.CharacterClass.Soldier;
 
@@ -10,7 +11,11 @@ public class FEreplicate {
         System.out.println(1);
 
         Soldier soldier = new Soldier();
-        ArrayList<CharacterClass> cc = new ArrayList<CharacterClass>();
+        ChangeableClass<CharacterClass> cc = new ChangeableClass<CharacterClass>();
+
+        cc.addClass(soldier);
+
+
 
 
     }
