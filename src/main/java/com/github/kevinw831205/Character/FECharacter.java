@@ -35,5 +35,9 @@ public class FECharacter {
         return name;
     }
 
+    public void switchClass(CharacterClass current, CharacterClass target){
+
+    }
+
 
 }

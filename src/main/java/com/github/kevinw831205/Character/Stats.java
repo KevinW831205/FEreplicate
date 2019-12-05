@@ -3,7 +3,7 @@ package com.github.kevinw831205.Character;
 public class Stats {
 
     private Integer level;
-    private Integer maxHealthPoint;
+    private Integer maxHP;
     private Integer strength;
     private Integer magic;
     private Integer dexterity;
@@ -24,11 +24,15 @@ public class Stats {
     }
 
     public void addStats(Stats stats){
+        speed += stats.speed;
+    }
+
+    public void subtractStats(Stats stats){
 
     }
 
-    public Integer getMaxHealthPoint() {
-        return maxHealthPoint;
+    public Integer getMaxHP() {
+        return maxHP;
     }
 
     public Integer getStrength() {
