@@ -1,6 +1,6 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
-import com.github.kevinw831205.Character.CharacterClass.Mastery;
+import com.github.kevinw831205.Character.CharacterClass.Masteries.*;
 import com.github.kevinw831205.Character.Stats;
 
 public class Commoner extends UniqueClass {
