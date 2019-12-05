@@ -1,6 +1,8 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
 import com.github.kevinw831205.Character.CharacterClass.Masteries.*;
+import com.github.kevinw831205.Character.CharacterClass.Masteries.MasterAbility.MasterAbility;
+import com.github.kevinw831205.Character.CharacterClass.Masteries.MasterArt.MasterArt;
 import com.github.kevinw831205.Character.GrowthRate;
 import com.github.kevinw831205.Character.Stats;
 
@@ -15,25 +17,26 @@ public class Commoner extends UniqueClass {
 
 
 
-    public Commoner(Mastery mastery, Integer classXP, Integer minLevel, Stats baseStats, GrowthRate classGrowthRate, String className1, Mastery mastery1, Integer xp, Integer minLevel1, Stats baseStats1) {
-        super("Commoner", mastery, classXP, minLevel, baseStats, classGrowthRate);
-    }
-
     @Override
     public String getClassName() {
         return this.className;
     }
 
-    @Override
-    public void classLevelUp() {
 
+    @Override
+    public MasterAbility getMasteredAbility() {
+        return null;
+    }
+
+    @Override
+    public MasterArt getMasteredArt() {
+        return null;
     }
 
     @Override
     public void mastered() {
 
     }
-
 
     @Override
     public GrowthRate getBaseGrowthRate() {

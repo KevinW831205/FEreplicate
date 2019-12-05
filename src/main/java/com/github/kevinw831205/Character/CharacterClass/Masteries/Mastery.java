@@ -7,6 +7,6 @@ public interface Mastery {
 
     MasterAbility getMasteredAbility();
     MasterArt getMasteredArt();
-    void Mastered();
+    void mastered();
 
 }
