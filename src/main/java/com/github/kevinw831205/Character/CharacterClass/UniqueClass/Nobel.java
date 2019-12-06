@@ -7,11 +7,6 @@ import com.github.kevinw831205.Character.Stats;
 
 public class Nobel extends UniqueClass {
 
-    String className;
-    Integer classXP;
-    boolean hasMastered;
-    Stats baseStats;
-    GrowthRate classGrowthRate;
 
 
 

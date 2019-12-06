@@ -3,17 +3,8 @@ package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 import com.github.kevinw831205.Character.CharacterClass.Masteries.MasterAbility.MasterAbility;
 import com.github.kevinw831205.Character.CharacterClass.Masteries.MasterArt.MasterArt;
 import com.github.kevinw831205.Character.GrowthRate;
-import com.github.kevinw831205.Character.Stats;
 
 public class Commoner extends UniqueClass {
-
-    String className;
-    Integer classXP;
-    boolean hasMastered;
-    Stats baseStats;
-    GrowthRate classGrowthRate;
-
-
 
 
 
