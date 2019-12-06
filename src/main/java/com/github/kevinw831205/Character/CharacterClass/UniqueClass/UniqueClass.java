@@ -29,4 +29,11 @@ abstract public class UniqueClass implements CharacterClass, Mastery {
         hasMastered = true;
     }
 
+    public void setBaseStats(Stats baseStats) {
+        this.baseStats = baseStats;
+    }
+
+    public void setClassGrowthRate(GrowthRate classGrowthRate) {
+        this.classGrowthRate = classGrowthRate;
+    }
 }
