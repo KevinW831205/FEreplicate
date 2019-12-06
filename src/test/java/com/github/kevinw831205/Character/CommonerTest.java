@@ -1,13 +1,31 @@
 package com.github.kevinw831205.Character;
 
 
+import com.github.kevinw831205.Character.CharacterClass.UniqueClass.Commoner;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class CommonerTest {
 
+    // given
+    FECharacter TestCharacter  = new FECharacter(
+            "TestCharacter",
+            new Commoner(),
+            null,
+            null,
+            null,
+            null
+    );
+
+
     @Test
-    public void test1(){
-        Assert.assertEquals(1,1);
+    public void ClassNameTest(){
+        String actualName = TestCharacter.getCharacterClass().getClassName();
+        String expectedName = "Commoner";
+        Assert.assertEquals(actualName,expectedName);
     }
+
+
+
+
 }
