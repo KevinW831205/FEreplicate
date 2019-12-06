@@ -3,7 +3,6 @@ package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 import com.github.kevinw831205.Character.CharacterClass.Masteries.MasterAbility.MasterAbility;
 import com.github.kevinw831205.Character.CharacterClass.Masteries.MasterArt.MasterArt;
 import com.github.kevinw831205.Character.GrowthRate;
-import com.github.kevinw831205.Character.Stats;
 
 public class Nobel extends UniqueClass {
 
@@ -19,13 +18,7 @@ public class Nobel extends UniqueClass {
     public GrowthRate getBaseGrowthRate() {
         return null;
     }
-
-    @Override
-    public void mastered() {
-
-    }
-
-
+    s
     @Override
     public MasterAbility getMasteredAbility() {
         return null;

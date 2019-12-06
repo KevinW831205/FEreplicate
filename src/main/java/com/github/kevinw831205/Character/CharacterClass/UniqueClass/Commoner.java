@@ -24,10 +24,6 @@ public class Commoner extends UniqueClass {
         return null;
     }
 
-    @Override
-    public void mastered() {
-
-    }
 
     @Override
     public GrowthRate getBaseGrowthRate() {
