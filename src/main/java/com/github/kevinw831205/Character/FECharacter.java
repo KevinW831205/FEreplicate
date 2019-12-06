@@ -1,7 +1,7 @@
 package com.github.kevinw831205.Character;
 
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
-import com.github.kevinw831205.Character.CharacterClass.WeaponSkillLevel.WeaponSkillLevel;
+import com.github.kevinw831205.Character.WeaponSkillLevel.WeaponSkillLevel;
 
 import java.util.ArrayList;
 
@@ -26,6 +26,8 @@ public class FECharacter {
         this.weaponSkillLevel = weaponSkillLevel;
         this.gender = gender;
     }
+
+
 
     public FECharacter(String name) {
         this.name = name;
