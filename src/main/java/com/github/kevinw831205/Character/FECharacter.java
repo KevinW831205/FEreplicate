@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class FECharacter {
     private String name;
-    private CharacterClass cClass;
+    private CharacterClass characterClass;
     private Stats stats;
     private Inventory inventory;
     public ArrayList<CharacterClass> changeableClass;
@@ -16,9 +16,9 @@ public class FECharacter {
     private boolean isAlive;
     private Gender gender;
 
-    public FECharacter(String name, CharacterClass cClass, Stats stats, Inventory inventory, WeaponSkillLevel weaponSkillLevel, Gender gender) {
+    public FECharacter(String name, CharacterClass characterClass, Stats stats, Inventory inventory, WeaponSkillLevel weaponSkillLevel, Gender gender) {
         this.name = name;
-        this.cClass = cClass;
+        this.characterClass = characterClass;
         this.stats = stats;
         this.inventory = inventory;
         this.weaponSkillLevel = weaponSkillLevel;
@@ -37,6 +37,7 @@ public class FECharacter {
 
     }
 
-
-
+    public CharacterClass getCharacterClass() {
+        return characterClass;
+    }
 }

@@ -10,10 +10,10 @@ public class Gender {
     }
 
     public boolean isMale(){
-        return null
+        return false;
     }
 
     public boolean isFemale(){
-        return null;
+        return false;
     }
 }

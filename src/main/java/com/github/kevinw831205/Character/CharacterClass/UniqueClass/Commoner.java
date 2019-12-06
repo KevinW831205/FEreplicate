@@ -23,7 +23,6 @@ public class Commoner extends UniqueClass {
         return this.className;
     }
 
-
     @Override
     public MasterAbility getMasteredAbility() {
         return null;
