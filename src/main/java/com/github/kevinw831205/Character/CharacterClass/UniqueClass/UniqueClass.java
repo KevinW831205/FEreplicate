@@ -17,7 +17,6 @@ abstract public class UniqueClass implements CharacterClass, Mastery {
     public UniqueClass(String className, Integer classXP, Stats baseStats, GrowthRate classGrowthRate) {
         this.minLevel = 0;
         this.hasMastered = false;
-
         this.className = className;
         this.classXP = classXP;
         this.baseStats = baseStats;

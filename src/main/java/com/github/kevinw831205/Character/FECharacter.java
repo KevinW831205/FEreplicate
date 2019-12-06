@@ -15,6 +15,8 @@ public class FECharacter {
     private Integer currentHP;
     private boolean isAlive;
     private Gender gender;
+    private ArrayList<Ability> abilities;
+    private ArrayList<Art> arts;
 
     public FECharacter(String name, CharacterClass characterClass, Stats stats, Inventory inventory, WeaponSkillLevel weaponSkillLevel, Gender gender) {
         this.name = name;
