@@ -26,7 +26,7 @@ public class Stats {
         this.charm = charm;
     }
 
-    private final GrowthRate growthRate = null;
+    private GrowthRate growthRate = null;
 
     public Integer getLevel() {
         return level;
