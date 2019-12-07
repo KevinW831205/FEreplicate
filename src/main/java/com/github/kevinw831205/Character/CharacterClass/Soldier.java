@@ -1,9 +1,14 @@
 package com.github.kevinw831205.Character.CharacterClass;
 
 import com.github.kevinw831205.Character.GrowthRate;
+import com.github.kevinw831205.Character.Stats;
 
 public class Soldier extends BeginnerClass {
 
+    @Override
+    public Stats getBaseStats() {
+        return null;
+    }
 
     @Override
     public String getClassName() {

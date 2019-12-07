@@ -25,6 +25,14 @@ public class CommonerTest {
         Assert.assertEquals(actualName,expectedName);
     }
 
+    @Test
+    public void BaseStatsTest(){
+        Integer actualStats = TestCharacter.getCharacterClass().getBaseStats().getMaxHP();
+        Integer expectedStats = 5;
+        Assert.assertEquals(actualStats,expectedStats);
+
+    }
+
 
 
 

@@ -1,7 +1,7 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
-import com.github.kevinw831205.Character.CharacterClass.Masteries.Mastery;
+import com.github.kevinw831205.Character.CharacterClass.Mastery;
 import com.github.kevinw831205.Character.GrowthRate;
 import com.github.kevinw831205.Character.Stats;
 
@@ -34,5 +34,9 @@ abstract public class UniqueClass implements CharacterClass, Mastery {
 
     public void setClassGrowthRate(GrowthRate classGrowthRate) {
         this.classGrowthRate = classGrowthRate;
+    }
+
+    public Stats getBaseStats() {
+        return baseStats;
     }
 }
