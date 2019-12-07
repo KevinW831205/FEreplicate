@@ -30,7 +30,6 @@ public class CommonerTest {
         Integer actualStats = TestCharacter.getCharacterClass().getBaseStats().getMaxHP();
         Integer expectedStats = 5;
         Assert.assertEquals(actualStats,expectedStats);
-
     }
 
 

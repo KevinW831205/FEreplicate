@@ -43,7 +43,9 @@ public class Stats {
     }
 
     public void addStats(Stats stats){
-        speed += stats.speed;
+        if(stats.getMaxHP() != null){
+            this.maxHP += stats.maxHP;
+        }
     }
 
     public void subtractStats(Stats stats){
