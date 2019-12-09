@@ -13,6 +13,7 @@ public class Commoner extends UniqueClass {
         baseStatsBuilder.setMaxHP(5);
         Stats baseStats = baseStatsBuilder.createStats();
         GrowthRate classGrowthRate = new GrowthRate();
+
         this.setBaseStats(baseStats);
         this.setClassGrowthRate(classGrowthRate);
     }
@@ -21,8 +22,6 @@ public class Commoner extends UniqueClass {
     public String getClassName() {
         return this.className;
     }
-
-
 
 
     @Override
