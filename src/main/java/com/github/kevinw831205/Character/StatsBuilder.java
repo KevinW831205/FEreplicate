@@ -68,7 +68,7 @@ public class StatsBuilder {
         return this;
     }
 
-    public Stats createStats() {
+    public Stats build() {
         return new Stats(level, maxHP, strength, magic, dexterity, speed, luck, defense, resistance, charm, growthRate);
     }
 }

@@ -3,7 +3,7 @@ package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 import com.github.kevinw831205.Character.GrowthRate;
 import com.github.kevinw831205.Character.Stats;
 
-public abstract class UniqueClassBuilder extends UniqueClass{
+public abstract class UniqueClassBuilder {
     private String className;
     private Integer classXP;
     private Stats baseStats;
@@ -29,7 +29,5 @@ public abstract class UniqueClassBuilder extends UniqueClass{
         return this;
     }
 
-    public UniqueClass createUniqueClass() {
-        return super(className, classXP, baseStats, classGrowthRate);
-    }
+    abstract public UniqueClass build();
 }

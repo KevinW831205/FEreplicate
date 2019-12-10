@@ -11,7 +11,7 @@ public class Commoner extends UniqueClass {
 
         StatsBuilder baseStatsBuilder = new StatsBuilder();
         baseStatsBuilder.setMaxHP(5);
-        Stats baseStats = baseStatsBuilder.createStats();
+        Stats baseStats = baseStatsBuilder.build();
         GrowthRate classGrowthRate = new GrowthRate();
 
         this.setBaseStats(baseStats);
