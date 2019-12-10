@@ -5,7 +5,7 @@ import com.github.kevinw831205.Character.CharacterClass.Mastery;
 import com.github.kevinw831205.Character.GrowthRate;
 import com.github.kevinw831205.Character.Stats;
 
-abstract public class UniqueClass implements CharacterClass, Mastery {
+ abstract public class UniqueClass implements UniqueClassInterface {
 
     Integer minLevel;
     String className;
@@ -23,12 +23,22 @@ abstract public class UniqueClass implements CharacterClass, Mastery {
         this.classGrowthRate = classGrowthRate;
     }
 
-    @Override
+     @Override
+     public String getClassName() {
+         return null;
+     }
+
+     @Override
     public void mastered() {
         hasMastered = true;
     }
 
-    public void setBaseStats(Stats baseStats) {
+     @Override
+     public GrowthRate getBaseGrowthRate() {
+         return null;
+     }
+
+     public void setBaseStats(Stats baseStats) {
         this.baseStats = baseStats;
     }
 
@@ -39,4 +49,24 @@ abstract public class UniqueClass implements CharacterClass, Mastery {
     public Stats getBaseStats() {
         return baseStats;
     }
-}
+
+     @Override
+     public Integer getMinLevel() {
+         return null;
+     }
+
+     @Override
+     public Integer getClassXP() {
+         return null;
+     }
+
+     @Override
+     public boolean isHasMastered() {
+         return false;
+     }
+
+     @Override
+     public GrowthRate getClassGrowthRate() {
+         return null;
+     }
+ }
