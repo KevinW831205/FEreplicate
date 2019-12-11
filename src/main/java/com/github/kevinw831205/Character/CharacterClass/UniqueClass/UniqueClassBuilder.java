@@ -9,6 +9,22 @@ public abstract class UniqueClassBuilder {
     private Stats baseStats;
     private GrowthRate classGrowthRate;
 
+    public String getClassName() {
+        return className;
+    }
+
+    public Integer getClassXP() {
+        return classXP;
+    }
+
+    public Stats getBaseStats() {
+        return baseStats;
+    }
+
+    public GrowthRate getClassGrowthRate() {
+        return classGrowthRate;
+    }
+
     public UniqueClassBuilder setClassName(String className) {
         this.className = className;
         return this;
