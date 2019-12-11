@@ -47,8 +47,44 @@ public class Stats {
     }
 
     public void addStats(Stats stats){
-        if(stats.getMaxHP() != null){
+        if(stats.maxHP != null){
             this.maxHP += stats.maxHP;
+        }
+
+        if(stats.strength != null) {
+            this.strength += stats.strength;
+        }
+
+        if(stats.magic != null){
+            this.magic += stats.magic;
+        }
+
+        if(stats.dexterity != null){
+            this.dexterity += stats.dexterity;
+        }
+
+        if(stats.speed != null){
+            this.speed += stats.speed;
+        }
+
+        if(stats.luck != null){
+            this.luck += stats.luck;
+        }
+
+        if(stats.defense != null){
+            this.defense += stats.defense;
+        }
+
+        if(stats.resistance != null){
+            this.resistance += stats.resistance;
+        }
+
+        if(stats.charm != null){
+            this.charm += stats.charm;
+        }
+
+        if(stats.movement != null){
+            this.movement = stats.movement;
         }
     }
 
@@ -94,5 +130,29 @@ public class Stats {
 
     public Integer getMovement() {
         return movement;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    public String toString() {
+        return new StringBuilder()
+                .append("\nLevel : "+this.level)
+                .append("\nMaxHP: "+this.maxHP)
+                .append("\nStrength: "+this.strength)
+                .append("\nMagic: "+this.magic)
+                .append("\nDex: "+this.dexterity)
+                .append("\nSpeed: "+this.speed)
+                .append("\nLuck: "+this.luck)
+                .append("\nDef: "+this.defense)
+                .append("\nRes: "+this.resistance)
+                .append("\nCharm: "+this.charm)
+                .append("\nMovement: "+this.movement)
+                .toString();
+
+
     }
 }
