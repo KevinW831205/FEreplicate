@@ -174,7 +174,6 @@ public class Stats {
         return Objects.hash(level, maxHP, strength, magic, dexterity, speed, luck, defense, resistance, charm, movement, growthRate);
     }
 
-
     public Integer getMaxHP() {
         return maxHP;
     }
