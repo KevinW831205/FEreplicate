@@ -18,12 +18,22 @@ public class Commoner extends UniqueClass {
 ////        this.setClassGrowthRate(classGrowthRate);
 //    }
     public Commoner(){
-        this.baseStats = new StatsBuilder().build();
-        this.className = "Commoner";
-        this.classXP = 0;
-        this.classGrowthRate = new GrowthRate();
-        this.hasMastered = false;
+        this(new Stats(),
+                "Commoner",
+                0,
+                new GrowthRate(),
+                false);
     }
+
+    private Commoner(Stats stats, String className, Integer classXp, GrowthRate growthRate, Boolean hasMastered) {
+        this.baseStats = stats;
+        this.className = className;
+        this.classXP = classXp;
+        this.classGrowthRate = growthRate;
+        this.hasMastered = hasMastered;
+
+    }
+
 
 
     @Override

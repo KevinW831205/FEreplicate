@@ -15,6 +15,8 @@ public class Stats {
     private GrowthRate growthRate;
 
 
+    public Stats() {
+    }
 
     public Stats(Integer level, Integer maxHP, Integer strength, Integer magic, Integer dexterity, Integer speed, Integer luck, Integer defense, Integer resistance, Integer charm, GrowthRate growthRate) {
         this.level = level;
