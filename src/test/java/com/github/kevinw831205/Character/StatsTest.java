@@ -24,6 +24,16 @@ public class StatsTest {
             .setMovement(6)
             .build();
 
+    Stats stats3 = new StatsBuilder()
+            .setLevel(3)
+            .setMaxHP(10)
+            .setStrength(2).setMagic(4)
+            .setDexterity(5).setSpeed(1).setLuck(1)
+            .setDefense(3).setResistance(4)
+            .setCharm(0)
+            .setMovement(8)
+            .build();
+
     public void test(int actual, int expected) {
 
     }
@@ -57,6 +67,43 @@ public class StatsTest {
                 .build();
 
         Assert.assertEquals(stats1, expected);
+    }
+
+    @Test
+    public void SubtractStatsTest1() {
+        /*
+            Stats stats1 = new StatsBuilder()
+            .setLevel(1)
+            .setMaxHP(30)
+            .setStrength(16).setMagic(6)
+            .setDexterity(6).setSpeed(12).setLuck(10)
+            .setDefense(8).setResistance(7)
+            .setCharm(4)
+            .setMovement(4)
+            .build();
+            Stats stats3 = new StatsBuilder()
+            .setLevel(3)
+            .setMaxHP(10)
+            .setStrength(2).setMagic(4)
+            .setDexterity(5).setSpeed(1).setLuck(1)
+            .setDefense(3).setResistance(4)
+            .setCharm(0)
+            .setMovement(8)
+            .build();
+         */
+        stats1.subtractStats(stats3);
+        Stats expected = new StatsBuilder()
+                .setLevel(1)
+                .setMaxHP(20)
+                .setStrength(14).setMagic(2)
+                .setDexterity(1).setSpeed(11).setLuck(9)
+                .setDefense(5).setResistance(3)
+                .setCharm(4)
+                .setMovement(8)
+                .build();
+
+
+
     }
 
 
