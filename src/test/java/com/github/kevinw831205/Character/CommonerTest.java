@@ -26,11 +26,19 @@ public class CommonerTest {
     }
 
     @Test
-    public void BaseStatsTest(){
-        Integer actualStats = TestCharacter.getCharacterClass().getBaseStats().getMaxHP();
-        Integer expectedStats = 5;
+    public void BaseStatsMvTest(){
+        Integer actualStats = TestCharacter.getCharacterClass().getBaseStats().getMovement();
+        Integer expectedStats = 4;
         Assert.assertEquals(actualStats,expectedStats);
     }
+
+    @Test
+    public void BaseStatsHpTest(){
+        Integer actualStats = TestCharacter.getCharacterClass().getBaseStats().getMaxHP();
+        Integer expectedStats = null;
+        Assert.assertEquals(actualStats,expectedStats);
+    }
+
 
 
 

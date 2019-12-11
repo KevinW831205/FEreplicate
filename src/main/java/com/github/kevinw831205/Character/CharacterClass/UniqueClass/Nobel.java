@@ -2,12 +2,13 @@ package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
 import com.github.kevinw831205.Character.GrowthRate;
 import com.github.kevinw831205.Character.Stats;
+import com.github.kevinw831205.Character.StatsBuilder;
 
 public class Nobel extends UniqueClass {
 
     public Nobel() {
         this(
-                new Stats(),
+                new StatsBuilder().setMovement(4).build(),
                 "Nobel",
                 0,
                 0,
