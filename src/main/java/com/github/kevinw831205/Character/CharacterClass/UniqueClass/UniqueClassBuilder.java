@@ -28,6 +28,4 @@ public abstract class UniqueClassBuilder {
         this.classGrowthRate = classGrowthRate;
         return this;
     }
-
-    abstract public UniqueClass build();
 }

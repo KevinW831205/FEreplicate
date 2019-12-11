@@ -1,19 +1,15 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
-import com.github.kevinw831205.Character.GrowthRate;
-import com.github.kevinw831205.Character.Stats;
-import com.github.kevinw831205.Character.StatsBuilder;
-
 public class CommonerBuilder extends UniqueClassBuilder {
+    private Commoner commoner;
+    private CommonerBuilder commonerBuilder = new CommonerBuilder();
+
+    private CommonerBuilder() {
+    }
 
 
-
-    @Override
     public Commoner build() {
-        this.setBaseStats(new StatsBuilder().build());
-        this.setClassGrowthRate(new GrowthRate());
-        this.setClassName("commoner");
-        this.setClassXP(0);
-        return
+//        return new (Commoner) this;
+        return commoner;
     }
 }
