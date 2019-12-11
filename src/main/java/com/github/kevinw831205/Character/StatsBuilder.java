@@ -11,6 +11,7 @@ public class StatsBuilder {
     private Integer defense;
     private Integer resistance;
     private Integer charm;
+    private Integer movement;
     private GrowthRate growthRate;
 
     public StatsBuilder setLevel(Integer level) {
@@ -63,12 +64,17 @@ public class StatsBuilder {
         return this;
     }
 
+    public StatsBuilder setMovement(Integer movement){
+        this.movement = movement;
+        return this;
+    }
+
     public StatsBuilder setGrowthRate(GrowthRate growthRate){
         this.growthRate =growthRate;
         return this;
     }
 
     public Stats build() {
-        return new Stats(level, maxHP, strength, magic, dexterity, speed, luck, defense, resistance, charm, growthRate);
+        return new Stats(level, maxHP, strength, magic, dexterity, speed, luck, defense, resistance, charm, movement, growthRate);
     }
 }

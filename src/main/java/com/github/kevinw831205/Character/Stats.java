@@ -12,13 +12,14 @@ public class Stats {
     private Integer defense;
     private Integer resistance;
     private Integer charm;
+    private Integer movement;
     private GrowthRate growthRate;
 
 
     public Stats() {
     }
 
-    public Stats(Integer level, Integer maxHP, Integer strength, Integer magic, Integer dexterity, Integer speed, Integer luck, Integer defense, Integer resistance, Integer charm, GrowthRate growthRate) {
+    public Stats(Integer level, Integer maxHP, Integer strength, Integer magic, Integer dexterity, Integer speed, Integer luck, Integer defense, Integer resistance, Integer charm, Integer movement, GrowthRate growthRate) {
         this.level = level;
         this.maxHP = maxHP;
         this.strength = strength;
@@ -29,6 +30,7 @@ public class Stats {
         this.defense = defense;
         this.resistance = resistance;
         this.charm = charm;
+        this.movement = movement;
         this.growthRate = growthRate;
     }
 
@@ -88,5 +90,9 @@ public class Stats {
 
     public Integer getCharm() {
         return charm;
+    }
+
+    public Integer getMovement() {
+        return movement;
     }
 }

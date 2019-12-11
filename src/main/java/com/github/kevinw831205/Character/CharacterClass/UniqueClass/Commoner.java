@@ -6,8 +6,9 @@ import com.github.kevinw831205.Character.StatsBuilder;
 
 public class Commoner extends UniqueClass {
 
-    public Commoner(){
-        this(new Stats(),
+    public Commoner() {
+        this(
+                new StatsBuilder().setMovement(4).build(),
                 "Commoner",
                 0,
                 0,
@@ -23,7 +24,6 @@ public class Commoner extends UniqueClass {
         this.hasMastered = hasMastered;
         this.minLevel = minLevel;
     }
-
 
 
     @Override
