@@ -7,12 +7,12 @@ import com.github.kevinw831205.Character.Stats;
 
 abstract public class UniqueClass implements CharacterClass, Mastery {
 
-    Integer minLevel;
-    String className;
-    Integer classXP;
-    boolean hasMastered;
-    Stats baseStats;
-    GrowthRate classGrowthRate;
+    protected Integer minLevel;
+    protected String className;
+    protected Integer classXP;
+    protected boolean hasMastered;
+    protected Stats baseStats;
+    protected GrowthRate classGrowthRate;
 
 //    public UniqueClass(String className, Integer classXP, Stats baseStats, GrowthRate classGrowthRate) {
 //        this.minLevel = 0;

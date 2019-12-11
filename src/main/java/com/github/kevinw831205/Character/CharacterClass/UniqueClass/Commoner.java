@@ -20,6 +20,9 @@ public class Commoner extends UniqueClass {
     public Commoner(){
         this.baseStats = new StatsBuilder().build();
         this.className = "Commoner";
+        this.classXP = 0;
+        this.classGrowthRate = new GrowthRate();
+        this.hasMastered = false;
     }
 
 
