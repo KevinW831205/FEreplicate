@@ -25,20 +25,19 @@ public class FECharacter {
         this.inventory = inventory;
         this.weaponSkillLevel = weaponSkillLevel;
         this.gender = gender;
-    }
-
-
-
-    public FECharacter(String name) {
-        this.name = name;
+        this.isAlive = true;
     }
 
     public String getName() {
         return name;
     }
 
-    public void switchClass(CharacterClass target){
-
+    public boolean switchClass(CharacterClass target){
+        if(! target.equals(characterClass)){
+            this.characterClass = target;
+            return true;
+        }
+        return false;
     }
 
     public CharacterClass getCharacterClass() {

@@ -21,17 +21,18 @@ public class Commoner extends UniqueClass {
         this(new Stats(),
                 "Commoner",
                 0,
+                0,
                 new GrowthRate(),
                 false);
     }
 
-    private Commoner(Stats stats, String className, Integer classXp, GrowthRate growthRate, Boolean hasMastered) {
+    private Commoner(Stats stats, String className, Integer minLevel, Integer classXp, GrowthRate growthRate, Boolean hasMastered) {
         this.baseStats = stats;
         this.className = className;
         this.classXP = classXp;
         this.classGrowthRate = growthRate;
         this.hasMastered = hasMastered;
-
+        this.minLevel = minLevel;
     }
 
 
