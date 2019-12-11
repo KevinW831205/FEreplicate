@@ -91,7 +91,45 @@ public class Stats {
     }
 
     public void subtractStats(Stats stats){
+        if(stats.maxHP != null){
+            this.maxHP -= stats.maxHP;
+        }
 
+        if(stats.strength != null) {
+            this.strength -= stats.strength;
+        }
+
+        if(stats.magic != null){
+            this.magic -= stats.magic;
+        }
+
+        if(stats.dexterity != null){
+            this.dexterity -= stats.dexterity;
+        }
+
+        if(stats.speed != null){
+            this.speed -= stats.speed;
+        }
+
+        if(stats.luck != null){
+            this.luck -= stats.luck;
+        }
+
+        if(stats.defense != null){
+            this.defense -= stats.defense;
+        }
+
+        if(stats.resistance != null){
+            this.resistance -= stats.resistance;
+        }
+
+        if(stats.charm != null){
+            this.charm -= stats.charm;
+        }
+
+        if(stats.movement != null){
+            this.movement = stats.movement;
+        }
     }
 
 
