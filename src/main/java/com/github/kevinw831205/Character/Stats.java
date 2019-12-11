@@ -1,5 +1,7 @@
 package com.github.kevinw831205.Character;
 
+import java.util.Objects;
+
 public class Stats {
 
     private Integer level;
@@ -92,6 +94,49 @@ public class Stats {
 
     }
 
+
+    @Override
+    public String toString() {
+        return new StringBuilder()
+                .append("\nLevel : "+this.level)
+                .append("\nMaxHP: "+this.maxHP)
+                .append("\nStrength: "+this.strength)
+                .append("\nMagic: "+this.magic)
+                .append("\nDex: "+this.dexterity)
+                .append("\nSpeed: "+this.speed)
+                .append("\nLuck: "+this.luck)
+                .append("\nDef: "+this.defense)
+                .append("\nRes: "+this.resistance)
+                .append("\nCharm: "+this.charm)
+                .append("\nMovement: "+this.movement)
+                .toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Stats stats = (Stats) o;
+        return Objects.equals(level, stats.level) &&
+                Objects.equals(maxHP, stats.maxHP) &&
+                Objects.equals(strength, stats.strength) &&
+                Objects.equals(magic, stats.magic) &&
+                Objects.equals(dexterity, stats.dexterity) &&
+                Objects.equals(speed, stats.speed) &&
+                Objects.equals(luck, stats.luck) &&
+                Objects.equals(defense, stats.defense) &&
+                Objects.equals(resistance, stats.resistance) &&
+                Objects.equals(charm, stats.charm) &&
+                Objects.equals(movement, stats.movement) &&
+                Objects.equals(growthRate, stats.growthRate);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(level, maxHP, strength, magic, dexterity, speed, luck, defense, resistance, charm, movement, growthRate);
+    }
+
+
     public Integer getMaxHP() {
         return maxHP;
     }
@@ -132,27 +177,5 @@ public class Stats {
         return movement;
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
 
-    @Override
-    public String toString() {
-        return new StringBuilder()
-                .append("\nLevel : "+this.level)
-                .append("\nMaxHP: "+this.maxHP)
-                .append("\nStrength: "+this.strength)
-                .append("\nMagic: "+this.magic)
-                .append("\nDex: "+this.dexterity)
-                .append("\nSpeed: "+this.speed)
-                .append("\nLuck: "+this.luck)
-                .append("\nDef: "+this.defense)
-                .append("\nRes: "+this.resistance)
-                .append("\nCharm: "+this.charm)
-                .append("\nMovement: "+this.movement)
-                .toString();
-
-
-    }
 }

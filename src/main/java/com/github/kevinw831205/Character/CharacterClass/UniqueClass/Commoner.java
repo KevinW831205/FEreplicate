@@ -13,7 +13,8 @@ public class Commoner extends UniqueClass {
                 0,
                 0,
                 new GrowthRate(),
-                false);
+                false
+        );
     }
 
     private Commoner(Stats stats, String className, Integer minLevel, Integer classXp, GrowthRate growthRate, Boolean hasMastered) {
