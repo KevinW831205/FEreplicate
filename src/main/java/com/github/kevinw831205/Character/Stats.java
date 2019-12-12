@@ -233,6 +233,4 @@ public class Stats {
     public Integer getMovement() {
         return movement;
     }
-
-
 }
