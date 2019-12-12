@@ -1,6 +1,7 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
 import com.github.kevinw831205.Character.GrowthRate;
+import com.github.kevinw831205.Character.GrowthRateBuilder;
 import com.github.kevinw831205.Character.Stats;
 import com.github.kevinw831205.Character.StatsBuilder;
 
@@ -12,7 +13,7 @@ public class Nobel extends UniqueClass {
                 "Nobel",
                 0,
                 0,
-                new GrowthRateBuilder().createGrowthRate(),
+                new GrowthRateBuilder().build(),
                 false
         );
     }

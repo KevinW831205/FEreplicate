@@ -43,24 +43,24 @@ public class Stats {
     }
 
     private void growAllStats() {
-//        growStats(maxHP, growthRate.getHPGrowth());
+        growStats(maxHP, growthRate.getHPGrowth());
     }
 
     private void growStats(Integer stats, Integer growthRate) {
-        if(growthRate > 255){
+        if (growthRate > 255) {
             growthRate = 255;
         }
-        while(growthRate>100){
+        while (growthRate > 100) {
             stats++;
-            growthRate = (growthRate -100);
+            growthRate = (growthRate - 100);
         }
-        if(getRandomInteger() < growthRate){
+        if (getRandomInteger() < growthRate) {
             stats++;
         }
     }
 
-    private Integer getRandomInteger(){
-        return (int) (Math.random()*100);
+    private Integer getRandomInteger() {
+        return (int) (Math.random() * 100);
     }
 
     public void addStats(Stats stats) {

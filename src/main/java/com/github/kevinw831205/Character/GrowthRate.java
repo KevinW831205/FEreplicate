@@ -24,6 +24,20 @@ public class GrowthRate {
         this.charmGrowth = charmGrowth;
     }
 
+    @Override
+    public String toString() {
+        return "GrowthRate{" +
+                "\nHPGrowth=" + HPGrowth + "%" +
+                "\nstrengthGrowth=" + strengthGrowth + "%" +
+                "\nmagicGrowth=" + magicGrowth + "%" +
+                "\ndexterityGrowth=" + dexterityGrowth + "%" +
+                "\nspeedGrowth=" + speedGrowth + "%" +
+                "\nluckGrowth=" + luckGrowth + "%" +
+                "\ndefenseGrowth=" + defenseGrowth + "%" +
+                "\nresistanceGrowth=" + resistanceGrowth + "%" +
+                "\ncharmGrowth=" + charmGrowth + "%" +
+                '}';
+    }
 
     public Integer getHPGrowth() {
         return HPGrowth;
