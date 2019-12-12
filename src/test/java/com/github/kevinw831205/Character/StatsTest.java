@@ -13,6 +13,15 @@ public class StatsTest {
             .setCharmGrowth((byte)60)
             .build();
 
+    GrowthRate gr2 = new GrowthRateBuilder()
+            .setHPGrowth((byte)140)
+            .setStrengthGrowth((byte)55).setMagicGrowth((byte)45)
+            .setDexterityGrowth((byte)45).setSpeedGrowth((byte)40).setLuckGrowth((byte)30)
+            .setDefenseGrowth((byte)35).setResistanceGrowth((byte)30)
+            .setCharmGrowth((byte)60)
+            .build();
+
+
     Stats stats1 = new StatsBuilder()
             .setLevel(1)
             .setMaxHP(30)
@@ -21,6 +30,7 @@ public class StatsTest {
             .setDefense(8).setResistance(7)
             .setCharm(4)
             .setMovement(4)
+            .setGrowthRate(gr1)
             .build();
     Stats stats2 = new StatsBuilder()
             .setLevel(5)
@@ -30,6 +40,7 @@ public class StatsTest {
             .setDefense(8).setResistance(7)
             .setCharm(4)
             .setMovement(6)
+            .setGrowthRate(gr2)
             .build();
 
     Stats stats3 = new StatsBuilder()
