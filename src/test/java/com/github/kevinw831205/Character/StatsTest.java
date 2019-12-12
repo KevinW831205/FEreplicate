@@ -5,6 +5,14 @@ import org.junit.Test;
 
 public class StatsTest {
 
+    GrowthRate gr1 = new GrowthRateBuilder()
+            .setHPGrowth((byte)40)
+            .setStrengthGrowth((byte)55).setMagicGrowth((byte)45)
+            .setDexterityGrowth((byte)45).setSpeedGrowth((byte)40).setLuckGrowth((byte)30)
+            .setDefenseGrowth((byte)35).setResistanceGrowth((byte)30)
+            .setCharmGrowth((byte)60)
+            .build();
+
     Stats stats1 = new StatsBuilder()
             .setLevel(1)
             .setMaxHP(30)
