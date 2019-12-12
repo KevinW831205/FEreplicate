@@ -101,9 +101,6 @@ public class StatsTest {
                 .setCharm(4)
                 .setMovement(8)
                 .build();
-
-
-
     }
 
 

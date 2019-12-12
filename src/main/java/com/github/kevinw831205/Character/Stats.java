@@ -39,6 +39,25 @@ public class Stats {
 
     public void levelUp() {
         this.level++;
+        growAllStats();
+    }
+
+    private void growAllStats() {
+
+    }
+
+    private void growStats(Integer stats, Byte growthRate) {
+        while(growthRate>100){
+            stats++;
+            growthRate =(byte)(growthRate -100);
+        }
+        if(getRandomByte() < growthRate){
+            stats++;
+        }
+    }
+
+    private Byte getRandomByte(){
+        return (byte) (Math.random()*100);
     }
 
     public void addStats(Stats stats) {
