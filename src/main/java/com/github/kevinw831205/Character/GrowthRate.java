@@ -2,17 +2,17 @@ package com.github.kevinw831205.Character;
 
 public class GrowthRate {
 
-    private Byte HPGrowth;
-    private Byte strengthGrowth;
-    private Byte magicGrowth;
-    private Byte dexterityGrowth;
-    private Byte speedGrowth;
-    private Byte luckGrowth;
-    private Byte defenseGrowth;
-    private Byte resistanceGrowth;
-    private Byte charmGrowth;
+    private Integer HPGrowth;
+    private Integer strengthGrowth;
+    private Integer magicGrowth;
+    private Integer dexterityGrowth;
+    private Integer speedGrowth;
+    private Integer luckGrowth;
+    private Integer defenseGrowth;
+    private Integer resistanceGrowth;
+    private Integer charmGrowth;
 
-    public GrowthRate(Byte HPGrowth, Byte strengthGrowth, Byte magicGrowth, Byte dexterityGrowth, Byte speedGrowth, Byte luckGrowth, Byte defenseGrowth, Byte resistanceGrowth, Byte charmGrowth) {
+    public GrowthRate(Integer HPGrowth, Integer strengthGrowth, Integer magicGrowth, Integer dexterityGrowth, Integer speedGrowth, Integer luckGrowth, Integer defenseGrowth, Integer resistanceGrowth, Integer charmGrowth) {
         this.HPGrowth = HPGrowth;
         this.strengthGrowth = strengthGrowth;
         this.magicGrowth = magicGrowth;
@@ -24,42 +24,40 @@ public class GrowthRate {
         this.charmGrowth = charmGrowth;
     }
 
-    public GrowthRate(){
-    }
 
-    public Byte getHPGrowth() {
+    public Integer getHPGrowth() {
         return HPGrowth;
     }
 
-    public Byte getStrengthGrowth() {
+    public Integer getStrengthGrowth() {
         return strengthGrowth;
     }
 
-    public Byte getMagicGrowth() {
+    public Integer getMagicGrowth() {
         return magicGrowth;
     }
 
-    public Byte getDexterityGrowth() {
+    public Integer getDexterityGrowth() {
         return dexterityGrowth;
     }
 
-    public Byte getSpeedGrowth() {
+    public Integer getSpeedGrowth() {
         return speedGrowth;
     }
 
-    public Byte getLuckGrowth() {
+    public Integer getLuckGrowth() {
         return luckGrowth;
     }
 
-    public Byte getDefenseGrowth() {
+    public Integer getDefenseGrowth() {
         return defenseGrowth;
     }
 
-    public Byte getResistanceGrowth() {
+    public Integer getResistanceGrowth() {
         return resistanceGrowth;
     }
 
-    public Byte getCharmGrowth() {
+    public Integer getCharmGrowth() {
         return charmGrowth;
     }
 }

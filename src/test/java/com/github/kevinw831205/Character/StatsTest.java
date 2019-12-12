@@ -6,19 +6,19 @@ import org.junit.Test;
 public class StatsTest {
 
     GrowthRate gr1 = new GrowthRateBuilder()
-            .setHPGrowth((byte)40)
-            .setStrengthGrowth((byte)55).setMagicGrowth((byte)45)
-            .setDexterityGrowth((byte)45).setSpeedGrowth((byte)40).setLuckGrowth((byte)30)
-            .setDefenseGrowth((byte)35).setResistanceGrowth((byte)30)
-            .setCharmGrowth((byte)60)
+            .setHPGrowth(40)
+            .setStrengthGrowth(55).setMagicGrowth(45)
+            .setDexterityGrowth(45).setSpeedGrowth(40).setLuckGrowth(30)
+            .setDefenseGrowth(35).setResistanceGrowth(30)
+            .setCharmGrowth(60)
             .build();
 
     GrowthRate gr2 = new GrowthRateBuilder()
-            .setHPGrowth((byte)140)
-            .setStrengthGrowth((byte)55).setMagicGrowth((byte)45)
-            .setDexterityGrowth((byte)45).setSpeedGrowth((byte)40).setLuckGrowth((byte)30)
-            .setDefenseGrowth((byte)35).setResistanceGrowth((byte)30)
-            .setCharmGrowth((byte)60)
+            .setHPGrowth(140)
+            .setStrengthGrowth(55).setMagicGrowth(45)
+            .setDexterityGrowth(45).setSpeedGrowth(40).setLuckGrowth(30)
+            .setDefenseGrowth(35).setResistanceGrowth(30)
+            .setCharmGrowth(60)
             .build();
 
 
@@ -120,6 +120,11 @@ public class StatsTest {
                 .setCharm(4)
                 .setMovement(8)
                 .build();
+    }
+
+    @Test
+    public void growStatsTest(){
+        
     }
 
 

@@ -1,57 +1,57 @@
 package com.github.kevinw831205.Character;
 
 public class GrowthRateBuilder {
-    private Byte hpGrowth;
-    private Byte strengthGrowth;
-    private Byte magicGrowth;
-    private Byte dexterityGrowth;
-    private Byte speedGrowth;
-    private Byte luckGrowth;
-    private Byte defenseGrowth;
-    private Byte resistanceGrowth;
-    private Byte charmGrowth;
+    private Integer hpGrowth;
+    private Integer strengthGrowth;
+    private Integer magicGrowth;
+    private Integer dexterityGrowth;
+    private Integer speedGrowth;
+    private Integer luckGrowth;
+    private Integer defenseGrowth;
+    private Integer resistanceGrowth;
+    private Integer charmGrowth;
 
-    public GrowthRateBuilder setHPGrowth(Byte hpGrowth) {
+    public GrowthRateBuilder setHPGrowth(Integer hpGrowth) {
         this.hpGrowth = hpGrowth;
         return this;
     }
 
-    public GrowthRateBuilder setStrengthGrowth(Byte strengthGrowth) {
+    public GrowthRateBuilder setStrengthGrowth(Integer strengthGrowth) {
         this.strengthGrowth = strengthGrowth;
         return this;
     }
 
-    public GrowthRateBuilder setMagicGrowth(Byte magicGrowth) {
+    public GrowthRateBuilder setMagicGrowth(Integer magicGrowth) {
         this.magicGrowth = magicGrowth;
         return this;
     }
 
-    public GrowthRateBuilder setDexterityGrowth(Byte dexterityGrowth) {
+    public GrowthRateBuilder setDexterityGrowth(Integer dexterityGrowth) {
         this.dexterityGrowth = dexterityGrowth;
         return this;
     }
 
-    public GrowthRateBuilder setSpeedGrowth(Byte speedGrowth) {
+    public GrowthRateBuilder setSpeedGrowth(Integer speedGrowth) {
         this.speedGrowth = speedGrowth;
         return this;
     }
 
-    public GrowthRateBuilder setLuckGrowth(Byte luckGrowth) {
+    public GrowthRateBuilder setLuckGrowth(Integer luckGrowth) {
         this.luckGrowth = luckGrowth;
         return this;
     }
 
-    public GrowthRateBuilder setDefenseGrowth(Byte defenseGrowth) {
+    public GrowthRateBuilder setDefenseGrowth(Integer defenseGrowth) {
         this.defenseGrowth = defenseGrowth;
         return this;
     }
 
-    public GrowthRateBuilder setResistanceGrowth(Byte resistanceGrowth) {
+    public GrowthRateBuilder setResistanceGrowth(Integer resistanceGrowth) {
         this.resistanceGrowth = resistanceGrowth;
         return this;
     }
 
-    public GrowthRateBuilder setCharmGrowth(Byte charmGrowth) {
+    public GrowthRateBuilder setCharmGrowth(Integer charmGrowth) {
         this.charmGrowth = charmGrowth;
         return this;
     }

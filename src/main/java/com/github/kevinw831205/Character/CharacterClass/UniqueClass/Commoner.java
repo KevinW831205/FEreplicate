@@ -1,7 +1,6 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
 import com.github.kevinw831205.Character.GrowthRate;
-import com.github.kevinw831205.Character.GrowthRateBuilder;
 import com.github.kevinw831205.Character.Stats;
 import com.github.kevinw831205.Character.StatsBuilder;
 
