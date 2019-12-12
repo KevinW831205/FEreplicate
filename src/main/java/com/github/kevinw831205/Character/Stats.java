@@ -43,10 +43,18 @@ public class Stats {
     }
 
     private void growAllStats() {
-        growStats(maxHP, growthRate.getHPGrowth());
+        this.maxHP =  growStats(maxHP, growthRate.getHPGrowth());
+        this.strength = growStats(strength, growthRate.getStrengthGrowth());
+        this.magic = growStats(magic, growthRate.getMagicGrowth());
+        this.dexterity =  growStats(dexterity, growthRate.getDexterityGrowth());
+        this.speed = growStats(speed, growthRate.getSpeedGrowth());
+        this.luck = growStats(luck, growthRate.getLuckGrowth());
+        this.defense =  growStats(defense, growthRate.getDefenseGrowth());
+        this.resistance = growStats(resistance, growthRate.getResistanceGrowth());
+        this.charm = growStats(charm, growthRate.getCharmGrowth());
     }
 
-    private void growStats(Integer stats, Integer growthRate) {
+    private Integer growStats(Integer stats, Integer growthRate) {
         if (growthRate > 255) {
             growthRate = 255;
         }
@@ -57,6 +65,7 @@ public class Stats {
         if (getRandomInteger() < growthRate) {
             stats++;
         }
+        return stats;
     }
 
     private Integer getRandomInteger() {
