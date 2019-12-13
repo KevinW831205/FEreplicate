@@ -10,7 +10,7 @@ public class FECharacter {
     private CharacterClass characterClass;
     private Stats stats;
     private Inventory inventory;
-    public ArrayList<CharacterClass> changeableClass;
+    private ArrayList<CharacterClass> changeableClass;
     private WeaponSkillLevel weaponSkillLevel;
     private Integer currentHP;
     private boolean isAlive;
