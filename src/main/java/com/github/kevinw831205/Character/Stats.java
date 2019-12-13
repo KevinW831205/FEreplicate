@@ -87,9 +87,7 @@ public class Stats {
                 countFalse++;
             }
         }
-
         System.out.println("True "+countTrue+"\nFalse "+countFalse);
-
     }
 
     public void addStats(Stats stats) {
