@@ -104,4 +104,35 @@ public class GrowthRate {
             this.charmGrowth += gr.charmGrowth;
         }
     }
+
+    public void subtractGrowthRate(GrowthRate gr){
+        if(gr.HPGrowth != null){
+            this.HPGrowth -= gr.HPGrowth;
+        }
+        if(gr.strengthGrowth != null){
+            this.strengthGrowth -= gr.strengthGrowth;
+        }
+        if(gr.magicGrowth != null){
+            this.magicGrowth -= gr.magicGrowth;
+        }
+        if(gr.dexterityGrowth !=null){
+            this.dexterityGrowth -= gr.dexterityGrowth;
+        }
+        if(gr.speedGrowth !=null){
+            this.speedGrowth -= gr.speedGrowth;
+        }
+        if(gr.luckGrowth !=null){
+            this.luckGrowth -= gr.luckGrowth;
+        }
+        if(gr.defenseGrowth !=null){
+            this.defenseGrowth -= gr.defenseGrowth;
+        }
+        if(gr.resistanceGrowth !=null){
+            this.resistanceGrowth -= gr.resistanceGrowth;
+        }
+        if(gr.charmGrowth !=null){
+            this.charmGrowth -= gr.charmGrowth;
+        }
+    }
+
 }
