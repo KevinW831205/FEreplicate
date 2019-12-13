@@ -1,5 +1,7 @@
 package com.github.kevinw831205.Character;
 
+import java.util.Objects;
+
 public class GrowthRate {
 
     private Integer HPGrowth;
@@ -37,6 +39,27 @@ public class GrowthRate {
                 "\nresistanceGrowth=" + resistanceGrowth + "%" +
                 "\ncharmGrowth=" + charmGrowth + "%" +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        GrowthRate that = (GrowthRate) o;
+        return Objects.equals(HPGrowth, that.HPGrowth) &&
+                Objects.equals(strengthGrowth, that.strengthGrowth) &&
+                Objects.equals(magicGrowth, that.magicGrowth) &&
+                Objects.equals(dexterityGrowth, that.dexterityGrowth) &&
+                Objects.equals(speedGrowth, that.speedGrowth) &&
+                Objects.equals(luckGrowth, that.luckGrowth) &&
+                Objects.equals(defenseGrowth, that.defenseGrowth) &&
+                Objects.equals(resistanceGrowth, that.resistanceGrowth) &&
+                Objects.equals(charmGrowth, that.charmGrowth);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(HPGrowth, strengthGrowth, magicGrowth, dexterityGrowth, speedGrowth, luckGrowth, defenseGrowth, resistanceGrowth, charmGrowth);
     }
 
     public Integer getHPGrowth() {
