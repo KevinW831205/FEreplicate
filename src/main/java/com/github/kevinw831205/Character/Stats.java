@@ -62,10 +62,14 @@ public class Stats {
             stats++;
             growthRate = (growthRate - 100);
         }
-        if (getRandomInteger() < growthRate) {
+        if (statShouldGrow(growthRate)) {
             stats++;
         }
         return stats;
+    }
+
+    private boolean statShouldGrow(Integer probability){
+        return  getRandomInteger()< probability;
     }
 
     private Integer getRandomInteger() {

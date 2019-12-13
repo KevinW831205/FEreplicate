@@ -4,7 +4,9 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class StatsTest {
+    private void initialize(){
 
+    }
     GrowthRate gr1 = new GrowthRateBuilder()
             .setHPGrowth(40)
             .setStrengthGrowth(55).setMagicGrowth(45)
@@ -20,8 +22,6 @@ public class StatsTest {
             .setDefenseGrowth(35).setResistanceGrowth(30)
             .setCharmGrowth(60)
             .build();
-
-
     Stats stats1 = new StatsBuilder()
             .setLevel(1)
             .setMaxHP(30)
@@ -42,7 +42,6 @@ public class StatsTest {
             .setMovement(6)
             .setGrowthRate(gr2)
             .build();
-
     Stats stats3 = new StatsBuilder()
             .setLevel(3)
             .setMaxHP(10)
@@ -124,7 +123,7 @@ public class StatsTest {
 
     @Test
     public void growStatsTest(){
-        
+        stats1.levelUp();
     }
 
 
