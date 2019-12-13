@@ -76,6 +76,22 @@ public class Stats {
         return (int) (Math.random() * 100);
     }
 
+    public void growTest(Integer probability, Integer iterations){
+        int countTrue = 0;
+        int countFalse = 0;
+
+        for(int i=0; i<iterations; i++){
+            if(statShouldGrow(probability)){
+                countTrue++;
+            } else {
+                countFalse++;
+            }
+        }
+
+        System.out.println("True "+countTrue+"\nFalse "+countFalse);
+
+    }
+
     public void addStats(Stats stats) {
         if (stats.maxHP != null) {
             this.maxHP += stats.maxHP;

@@ -1,10 +1,5 @@
 package com.github.kevinw831205;
 
-import com.github.kevinw831205.Character.GrowthRate;
-import com.github.kevinw831205.Character.GrowthRateBuilder;
-import com.github.kevinw831205.Character.Stats;
-import com.github.kevinw831205.Character.StatsBuilder;
-
 public class FEreplicate {
     public static void main(String[] args) {
 
@@ -24,34 +19,35 @@ public class FEreplicate {
 //        System.out.println(s);
 
 
-        GrowthRate gr2 = new GrowthRateBuilder()
-                .setHPGrowth(240)
-                .setStrengthGrowth(55).setMagicGrowth(45)
-                .setDexterityGrowth(45).setSpeedGrowth(40).setLuckGrowth(30)
-                .setDefenseGrowth(35).setResistanceGrowth(30)
-                .setCharmGrowth(60)
-                .build();
-
-
-        Stats stats1 = new StatsBuilder()
-                .setLevel(1)
-                .setMaxHP(30)
-                .setStrength(16).setMagic(6)
-                .setDexterity(6).setSpeed(12).setLuck(10)
-                .setDefense(8).setResistance(7)
-                .setCharm(4)
-                .setMovement(4)
-                .setGrowthRate(gr2)
-                .build();
-
-
-        System.out.println(stats1);
-        System.out.println(stats1.getGrowthRate());
-        stats1.levelUp();
-        System.out.println("-------after--------");
-        System.out.println(stats1);
-        System.out.println(stats1.getGrowthRate());
-
+//        GrowthRate gr2 = new GrowthRateBuilder()
+//                .setHPGrowth(240)
+//                .setStrengthGrowth(55).setMagicGrowth(45)
+//                .setDexterityGrowth(45).setSpeedGrowth(40).setLuckGrowth(30)
+//                .setDefenseGrowth(35).setResistanceGrowth(30)
+//                .setCharmGrowth(60)
+//                .build();
+//
+//        Stats stats1 = new StatsBuilder()
+//                .setLevel(1)
+//                .setMaxHP(30)
+//                .setStrength(16).setMagic(6)
+//                .setDexterity(6).setSpeed(12).setLuck(10)
+//                .setDefense(8).setResistance(7)
+//                .setCharm(4)
+//                .setMovement(4)
+//                .setGrowthRate(gr2)
+//                .build();
+//
+//
+//        System.out.println(stats1);
+//        System.out.println(stats1.getGrowthRate());
+//        stats1.levelUp();
+//        System.out.println("-------after--------");
+//        System.out.println(stats1);
+//        System.out.println(stats1.getGrowthRate());
+//
+//        Stats randomTest = new Stats();
+//        randomTest.growTest(30,10000);
 
     }
 
