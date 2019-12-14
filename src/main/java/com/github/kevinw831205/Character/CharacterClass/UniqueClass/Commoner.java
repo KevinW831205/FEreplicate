@@ -1,11 +1,13 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
-import com.github.kevinw831205.Character.GrowthRate;
-import com.github.kevinw831205.Character.GrowthRateBuilder;
-import com.github.kevinw831205.Character.Stats;
-import com.github.kevinw831205.Character.StatsBuilder;
+import com.github.kevinw831205.Character.*;
+import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
+import com.github.kevinw831205.Character.WeaponSkillLevel.WeaponSkillLevel;
+
+import java.util.ArrayList;
 
 public class Commoner extends UniqueClass {
+    
 
     public Commoner() {
         this(
@@ -15,6 +17,9 @@ public class Commoner extends UniqueClass {
                 0,
                 new GrowthRateBuilder().build(),
                 false
+                /*
+                * StatsBuilder().setHP(5).build()
+                * */
         );
     }
 
@@ -25,6 +30,17 @@ public class Commoner extends UniqueClass {
         this.classGrowthRate = growthRate;
         this.hasMastered = hasMastered;
         this.minLevel = minLevel;
+////     Inventory inventory;
+////     WeaponSkillLevel weaponSkillLevel;
+////     Integer HP;
+////     Gender gender;
+////     Crest crest;
+////     boolean isAlive;
+////     ArrayList<Ability> ability;
+////     ArrayList<CharacterClass> changeableClass;
+////     ArrayList<Art> arts;
+
+
     }
 
 
@@ -37,6 +53,51 @@ public class Commoner extends UniqueClass {
     @Override
     public Stats getBaseStats() {
         return super.getBaseStats();
+    }
+
+    @Override
+    public Inventory getInventory() {
+        return null;
+    }
+
+    @Override
+    public WeaponSkillLevel getWeaponSkillLevel() {
+        return null;
+    }
+
+    @Override
+    public Integer getHP() {
+        return null;
+    }
+
+    @Override
+    public Gender getGender() {
+        return null;
+    }
+
+    @Override
+    public Crest getCrest() {
+        return null;
+    }
+
+    @Override
+    public boolean getIsAlive() {
+        return false;
+    }
+
+    @Override
+    public ArrayList<Ability> getAbilities() {
+        return null;
+    }
+
+    @Override
+    public ArrayList<CharacterClass> getChangeableClass() {
+        return null;
+    }
+
+    @Override
+    public ArrayList<Art> getArts() {
+        return null;
     }
 
     @Override
