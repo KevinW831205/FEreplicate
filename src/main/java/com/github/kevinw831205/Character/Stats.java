@@ -207,13 +207,12 @@ public class Stats {
                 Objects.equals(defense, stats.defense) &&
                 Objects.equals(resistance, stats.resistance) &&
                 Objects.equals(charm, stats.charm) &&
-                Objects.equals(movement, stats.movement) &&
-                Objects.equals(growthRate, stats.growthRate);
+                Objects.equals(movement, stats.movement);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(level, maxHP, strength, magic, dexterity, speed, luck, defense, resistance, charm, movement, growthRate);
+        return Objects.hash(level, maxHP, strength, magic, dexterity, speed, luck, defense, resistance, charm, movement);
     }
 
     public Integer getMaxHP() {
