@@ -1,6 +1,6 @@
 package com.github.kevinw831205.Character.Equipment.Shields;
 
-public interface Shields {
+public interface ShieldInterface {
     /*
     LeatherShield
     IronShield
@@ -26,4 +26,7 @@ public interface Shields {
     SeirosShield
     OchainShield
     */
+
+    public Character addDefenseEffect();
+    public Character subtractDefenseEffect();
 }
