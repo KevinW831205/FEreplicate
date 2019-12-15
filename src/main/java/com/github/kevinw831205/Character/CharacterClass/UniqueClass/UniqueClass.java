@@ -5,7 +5,7 @@ import com.github.kevinw831205.Character.CharacterClass.Mastery;
 import com.github.kevinw831205.Character.GrowthRate;
 import com.github.kevinw831205.Character.Stats;
 
-abstract public class UniqueClass implements CharacterClass, Mastery {
+abstract public class UniqueClass implements CharacterClass {
 
     Integer minLevel;
     String className;
