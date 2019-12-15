@@ -1,4 +1,4 @@
-package com.github.kevinw831205.Character.CharacterClass;
+package com.github.kevinw831205.Character.CharacterClass.BeginnerClass;
 
 import com.github.kevinw831205.Character.GrowthRate;
 import com.github.kevinw831205.Character.Stats;
