@@ -7,12 +7,12 @@ import com.github.kevinw831205.Character.Stats;
 
 abstract public class UniqueClass implements CharacterClass {
 
-    Integer minLevel;
-    String className;
-    Integer classXP;
-    boolean hasMastered;
-    Stats baseStats;
-    GrowthRate classGrowthRate;
+    private Integer minLevel;
+    private String className;
+    private Integer classXP;
+    private boolean hasMastered;
+    private Stats baseStats;
+    private GrowthRate classGrowthRate;
 
 //    public UniqueClass(String className, Integer classXP, Stats baseStats, GrowthRate classGrowthRate) {
 //        this.minLevel = 0;
@@ -31,5 +31,26 @@ abstract public class UniqueClass implements CharacterClass {
 
     public Stats getBaseStats() {
         return baseStats;
+    }
+
+    public Integer getMinLevel() {
+        return minLevel;
+    }
+
+    @Override
+    public String getClassName() {
+        return className;
+    }
+
+    public Integer getClassXP() {
+        return classXP;
+    }
+
+    public boolean isHasMastered() {
+        return hasMastered;
+    }
+
+    public GrowthRate getClassGrowthRate() {
+        return classGrowthRate;
     }
 }

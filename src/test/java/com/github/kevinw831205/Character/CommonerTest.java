@@ -23,6 +23,7 @@ public class CommonerTest {
         String actualName = TestCharacter.getCharacterClass().getClassName();
         String expectedName = "Commoner";
         Assert.assertEquals(actualName,expectedName);
+
     }
 
     @Test
