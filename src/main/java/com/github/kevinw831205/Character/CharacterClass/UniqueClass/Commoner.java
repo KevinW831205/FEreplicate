@@ -19,12 +19,7 @@ public class Commoner extends UniqueClass {
     }
 
     private Commoner(Stats stats, String className, Integer minLevel, Integer classXp, GrowthRate growthRate, Boolean hasMastered) {
-        super.baseStats = stats;
-        super.className = className;
-        super.classXP = classXp;
-        super.classGrowthRate = growthRate;
-        super.hasMastered = hasMastered;
-        super.minLevel = minLevel;
+        super(stats, className, minLevel, classXp, growthRate, hasMastered);
     }
 
     @Override
