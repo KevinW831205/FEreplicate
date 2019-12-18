@@ -10,14 +10,16 @@ abstract public class UniqueClass implements CharacterClass {
     private String className;
     private Integer classXP;
     private boolean hasMastered;
-    private Stats baseStats;
-    private GrowthRate classGrowthRate;
+    private final Stats baseStats;
+    private final GrowthRate classGrowthRate;
 
     public UniqueClass(String className, Integer classXP, Integer minLevel, boolean hasMaster, Stats baseStats, GrowthRate classGrowthRate) {
         this.minLevel = minLevel;
         this.hasMastered = hasMaster;
         this.className = className;
         this.classXP = classXP;
+        this.baseStats = baseStats;
+        this.classGrowthRate = classGrowthRate;
     }
 
     @Override

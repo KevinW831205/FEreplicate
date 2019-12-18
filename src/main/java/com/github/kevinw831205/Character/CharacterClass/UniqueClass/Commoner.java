@@ -8,8 +8,8 @@ import com.github.kevinw831205.Character.StatsBuilder;
 
 public class Commoner extends UniqueClass {
 
-    private final GrowthRate classGrowthRate = new GrowthRateBuilder().build();
-    private final Stats baseStats = new StatsBuilder().setMovement(4).build();
+//    private final GrowthRate classGrowthRate = new GrowthRateBuilder().build();
+//    private final Stats baseStats = new StatsBuilder().setMovement(4).build();
 
     public Commoner() {
         this(
