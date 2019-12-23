@@ -1,7 +1,9 @@
 package com.github.kevinw831205.Character.CharacterClass;
 
+import java.util.List;
+
 public interface Masterable {
-    Mastery getMastery();
+    void getMastery(List<Mastery> abilities, List<Mastery> arts);
     /*
 
     Issues:
