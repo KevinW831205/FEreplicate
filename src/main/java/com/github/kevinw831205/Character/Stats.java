@@ -69,7 +69,7 @@ public class Stats {
     }
 
     private boolean statShouldGrow(Integer probability){
-        return  getRandomInteger()< probability;
+        return  getRandomInteger() < probability;
     }
 
     private Integer getRandomInteger() {
