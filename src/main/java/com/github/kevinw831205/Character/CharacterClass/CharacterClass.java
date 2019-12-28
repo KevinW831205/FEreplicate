@@ -5,7 +5,6 @@ import com.github.kevinw831205.Character.Stats;
 
 public interface CharacterClass extends Masterable {
     public String getClassName();
-    public void mastered();
     public GrowthRate getBaseGrowthRate();
     public Stats getBaseStats();
 }

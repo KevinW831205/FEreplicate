@@ -1,9 +1,12 @@
 package com.github.kevinw831205.Character.CharacterClass;
 
+import com.github.kevinw831205.Character.Ability;
+import com.github.kevinw831205.Character.Art;
+
 import java.util.List;
 
 public interface Masterable {
-    void mastered(List<Mastery> abilities, List<Mastery> arts);
+    void mastered(List<Ability> abilities, List<Art> arts);
     /*
 
     Issues:

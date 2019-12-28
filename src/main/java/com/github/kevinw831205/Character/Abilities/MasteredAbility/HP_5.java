@@ -7,7 +7,6 @@ import com.github.kevinw831205.Character.StatsBuilder;
 public class HP_5 extends MasterAbility{
     Stats HP_5Bonus = new StatsBuilder().setMaxHP(5).build();
 
-
     @Override
     public void equip(FECharacter target, int abilitySlot) {
         if(target.getAbilities().contains(this)){

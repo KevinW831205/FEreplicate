@@ -5,6 +5,7 @@ import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
 import com.github.kevinw831205.Character.WeaponSkillLevel.WeaponSkillLevel;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 public class FECharacter {
@@ -30,6 +31,8 @@ public class FECharacter {
         this.weaponSkillLevel = weaponSkillLevel;
         this.gender = gender;
         this.isAlive = true;
+
+        this.abilities = new ArrayList<>();
     }
 
     public String getName() {
@@ -48,7 +51,7 @@ public class FECharacter {
         return characterClass;
     }
 
-    public ArrayList<Ability> getAbilities() {
+    public List<Ability> getAbilities() {
         return abilities;
     }
 
@@ -56,7 +59,7 @@ public class FECharacter {
         return equippedAbilities;
     }
 
-    public ArrayList<Art> getArts() {
+    public List<Art> getArts() {
         return arts;
     }
 

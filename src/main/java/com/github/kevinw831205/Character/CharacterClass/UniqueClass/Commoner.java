@@ -1,11 +1,7 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
 import com.github.kevinw831205.Character.Abilities.MasteredAbility.HP_5;
-import com.github.kevinw831205.Character.CharacterClass.Mastery;
-import com.github.kevinw831205.Character.GrowthRate;
-import com.github.kevinw831205.Character.GrowthRateBuilder;
-import com.github.kevinw831205.Character.Stats;
-import com.github.kevinw831205.Character.StatsBuilder;
+import com.github.kevinw831205.Character.*;
 
 import java.util.List;
 
@@ -35,8 +31,9 @@ public class Commoner extends UniqueClass {
     }
 
     @Override
-    public void mastered(List<Mastery> abilities,  List<Mastery> arts) {
-        super.mastered();
+    public void mastered(List<Ability> abilities, List<Art> arts) {
+        System.out.println("commoner mastered");
+        super.mastered(null,null);
         abilities.add(new HP_5());
     }
 }
