@@ -4,7 +4,6 @@ import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
 import com.github.kevinw831205.Character.WeaponSkillLevel.WeaponSkillLevel;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Set;
 
 public class FECharacter {
@@ -45,5 +44,17 @@ public class FECharacter {
 
     public CharacterClass getCharacterClass() {
         return characterClass;
+    }
+
+    public ArrayList<Ability> getAbilities() {
+        return abilities;
+    }
+
+    public ArrayList<Art> getArts() {
+        return arts;
+    }
+
+    public Stats getStats() {
+        return stats;
     }
 }
