@@ -10,7 +10,7 @@ public class HP_5 extends MasterAbility{
 
     @Override
     public void equip(FECharacter target) {
-        if(!target.getAbilities().contains(this)){
+        if(target.getAbilities().contains(this) ){
             target.getAbilities().add(this);
             target.getStats().addStats(this.HP_5Bonus);
         }

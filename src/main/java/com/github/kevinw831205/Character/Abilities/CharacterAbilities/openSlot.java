@@ -1,0 +1,20 @@
+package com.github.kevinw831205.Character.Abilities.CharacterAbilities;
+
+import com.github.kevinw831205.Character.Ability;
+import com.github.kevinw831205.Character.FECharacter;
+
+public class openSlot implements Ability {
+
+    public openSlot() {
+    }
+
+    @Override
+    public void equip(FECharacter target) {
+
+    }
+
+    @Override
+    public void unEquip(FECharacter target) {
+
+    }
+}
