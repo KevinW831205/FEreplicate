@@ -27,6 +27,13 @@ abstract public class UniqueClass implements CharacterClass {
         hasMastered = true;
     }
 
+    @Override
+    public String getClassName() {
+        return this.className;
+    }
 
-
+    @Override
+    public Stats getBaseStats() {
+        return this.baseStats;
+    }
 }

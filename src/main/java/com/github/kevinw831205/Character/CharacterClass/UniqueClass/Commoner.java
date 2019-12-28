@@ -30,18 +30,8 @@ public class Commoner extends UniqueClass {
     }
 
     @Override
-    public String getClassName() {
-        return null;
-    }
-
-    @Override
     public GrowthRate getBaseGrowthRate() {
         return null;
-    }
-
-    @Override
-    public Stats getBaseStats() {
-        return this.getBaseStats();
     }
 
     @Override
