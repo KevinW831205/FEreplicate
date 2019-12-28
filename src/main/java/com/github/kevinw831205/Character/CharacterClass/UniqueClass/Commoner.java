@@ -35,7 +35,8 @@ public class Commoner extends UniqueClass {
     }
 
     @Override
-    public void getMastery(List<Mastery> abilities,  List<Mastery> arts) {
+    public void mastered(List<Mastery> abilities,  List<Mastery> arts) {
+        super.mastered();
         abilities.add(new HP_5());
     }
 }

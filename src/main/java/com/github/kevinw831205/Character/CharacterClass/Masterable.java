@@ -3,7 +3,7 @@ package com.github.kevinw831205.Character.CharacterClass;
 import java.util.List;
 
 public interface Masterable {
-    void getMastery(List<Mastery> abilities, List<Mastery> arts);
+    void mastered(List<Mastery> abilities, List<Mastery> arts);
     /*
 
     Issues:

@@ -17,6 +17,7 @@ public class FECharacter {
     private boolean isAlive;
     private Gender gender;
     private ArrayList<Ability> abilities;
+    private Ability[] equippedAbilities = new Ability[5];
     private ArrayList<Art> arts;
     private Crest crest;
 
