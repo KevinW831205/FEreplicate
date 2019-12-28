@@ -17,7 +17,16 @@ public class HP_5Test {
         //when
         testCharacter.getCharacterClass().mastered(testCharacter.getAbilities(), testCharacter.getArts());
 
+        //then
         Assert.assertTrue(testCharacter.getAbilities().contains(new HP_5()));
+
+        //when
+        testCharacter.getAbilities().get(0).equip(testCharacter,0);
+        Integer actualHP = testCharacter.getStats().getMaxHP();
+
+        //then
+        Assert.assertEquals(new HP_5(),testCharacter.getEquippedAbilities()[0]);
+        Assert.assertEquals(Integer.valueOf(10), actualHP);
 
     }
 
