@@ -9,9 +9,9 @@ public class HP_5 extends MasterAbility{
 
 
     @Override
-    public void equip(FECharacter target) {
-        if(target.getAbilities().contains(this) ){
-            target.getAbilities().add(this);
+    public void equip(FECharacter target, int abilitySlot) {
+        if(target.getAbilities().contains(this)){
+            target.getEquippedAbilities()[abilitySlot] = this;
             target.getStats().addStats(this.HP_5Bonus);
         }
     }
@@ -19,7 +19,6 @@ public class HP_5 extends MasterAbility{
     @Override
     public void unEquip(FECharacter target) {
         if(target.getAbilities().contains(this)){
-            target.getAbilities().remove(this);
             target.getStats().subtractStats(this.HP_5Bonus);
         }
     }
