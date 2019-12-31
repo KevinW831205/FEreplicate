@@ -8,40 +8,66 @@ import org.junit.Test;
 public class CommonerTest {
 
     // given
-    FECharacter TestCharacter  = new FECharacter(
-            "TestCharacter",
-            new Commoner(),
-            null,
-            null,
-            null,
-            null
-    );
+    FECharacter createTestCharacter() {
+       return new FECharacter(
+                "TestCharacter",
+                new Commoner(),
+                null,
+                null,
+                null,
+                null
+        );
+    }
 
 
     @Test
-    public void ClassNameTest(){
-        String actualName = TestCharacter.getCharacterClass().getClassName();
+    public void ClassNameTest() {
+        FECharacter testCharacter = createTestCharacter();
+        String actualName = testCharacter.getCharacterClass().getClassName();
         String expectedName = "Commoner";
-        Assert.assertEquals(actualName,expectedName);
+        Assert.assertEquals(actualName, expectedName);
 
     }
 
     @Test
-    public void BaseStatsMvTest(){
-        Integer actualStats = TestCharacter.getCharacterClass().getBaseStats().getMovement();
+    public void BaseStatsMvTest() {
+        FECharacter testCharacter = createTestCharacter();
+        Integer actualStats = testCharacter.getCharacterClass().getBaseStats().getMovement();
         Integer expectedStats = 4;
-        Assert.assertEquals(actualStats,expectedStats);
+        Assert.assertEquals(actualStats, expectedStats);
     }
 
     @Test
-    public void BaseStatsHpTest(){
-        Integer actualStats = TestCharacter.getCharacterClass().getBaseStats().getMaxHP();
+    public void BaseStatsHpTest() {
+        FECharacter testCharacter = createTestCharacter();
+        Integer actualStats = testCharacter.getCharacterClass().getBaseStats().getMaxHP();
         Integer expectedStats = null;
-        Assert.assertEquals(actualStats,expectedStats);
+        Assert.assertEquals(actualStats, expectedStats);
     }
 
+    public void gainXpTest(Integer... xps) {
+        //given
+        FECharacter testCharacter = createTestCharacter();
 
+        //when
+        Integer expected = 0;
+        for(Integer xp : xps){
+            expected += xp;
+            testCharacter.getCharacterClass().gainXP(xp);
+        }
 
+        Integer actualXp = testCharacter.getCharacterClass().getClassXP();
+
+        //Then
+
+        Assert.assertEquals(expected,actualXp);
+    }
+
+    @Test
+    public void gainXpTest1(){
+        gainXpTest(5,10);
+
+    }
 
 
 }
