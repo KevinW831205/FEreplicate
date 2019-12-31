@@ -11,22 +11,22 @@ abstract public class UniqueClass implements CharacterClass {
     private String className;
     private Integer classXP;
     private boolean mastered;
-    private Integer masterXP;
+    private Integer masteryXP;
     private final Stats baseStats;
     private final GrowthRate classGrowthRate;
 
-    public UniqueClass(String className, Integer classXP, Integer minLevel, boolean mastered, Integer masterXP, Stats baseStats, GrowthRate classGrowthRate) {
+    public UniqueClass(String className, Integer classXP, Integer minLevel, boolean mastered, Integer masteryXP, Stats baseStats, GrowthRate classGrowthRate) {
         this.minLevel = minLevel;
         this.mastered = mastered;
         this.className = className;
         this.classXP = classXP;
-        this.masterXP = masterXP;
+        this.masteryXP = masteryXP;
         this.baseStats = baseStats;
         this.classGrowthRate = classGrowthRate;
     }
 
     private boolean canMaster() {
-        return this.classXP >= this.masterXP;
+        return this.classXP >= this.masteryXP;
     }
 
     @Override
@@ -66,5 +66,8 @@ abstract public class UniqueClass implements CharacterClass {
         return mastered;
     }
 
-
+    @Override
+    public Integer getMasteryXp() {
+        return this.masteryXp;
+    }
 }

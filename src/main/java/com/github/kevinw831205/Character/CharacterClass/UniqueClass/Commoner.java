@@ -4,8 +4,6 @@ import com.github.kevinw831205.Character.Abilities.MasteredAbility.HP_5;
 import com.github.kevinw831205.Character.*;
 
 public class Commoner extends UniqueClass {
-    private Integer masteryXp = 20;
-
     public Commoner() {
         this(
                 "Commoner",
@@ -26,10 +24,5 @@ public class Commoner extends UniqueClass {
     public void master(FECharacter character) {
         super.master(null);
         character.getAbilities().add(new HP_5());
-    }
-
-    @Override
-    public Integer getMasteryXp() {
-        return this.masteryXp;
     }
 }
