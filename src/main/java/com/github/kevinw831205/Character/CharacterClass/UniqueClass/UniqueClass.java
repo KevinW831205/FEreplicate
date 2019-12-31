@@ -67,7 +67,7 @@ abstract public class UniqueClass implements CharacterClass {
     }
 
     @Override
-    public Integer getMasteryXp() {
-        return this.masteryXp;
+    public Integer getMasteryXP() {
+        return this.masteryXP;
     }
 }

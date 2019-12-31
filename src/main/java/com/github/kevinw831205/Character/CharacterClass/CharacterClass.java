@@ -10,7 +10,7 @@ public interface CharacterClass extends Masterable {
 
     Stats getBaseStats();
 
-    Integer getMasteryXp();
+    Integer getMasteryXP();
 
     void gainXP(int xp);
 
