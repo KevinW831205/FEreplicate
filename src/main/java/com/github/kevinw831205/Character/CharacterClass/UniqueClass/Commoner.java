@@ -23,7 +23,6 @@ public class Commoner extends UniqueClass {
 
     @Override
     public void mastered(FECharacter character) {
-        System.out.println("commoner mastered");
         super.mastered(null);
         character.getAbilities().add(new HP_5());
     }
@@ -31,13 +30,5 @@ public class Commoner extends UniqueClass {
     @Override
     public Integer getMasteryXp() {
         return this.masteryXp;
-    }
-
-    @Override
-    public void gainXP(int xp) {
-        super.gainXP(xp);
-//        if(super.getClassXP() >= masteryXp){
-//            this.mastered();
-//        }
     }
 }
