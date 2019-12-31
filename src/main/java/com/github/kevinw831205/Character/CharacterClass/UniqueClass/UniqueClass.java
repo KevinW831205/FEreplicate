@@ -15,22 +15,23 @@ abstract public class UniqueClass implements CharacterClass {
     private final Stats baseStats;
     private final GrowthRate classGrowthRate;
 
-    public UniqueClass(String className, Integer classXP, Integer minLevel, boolean mastered, Integer masterXP,Stats baseStats, GrowthRate classGrowthRate) {
+    public UniqueClass(String className, Integer classXP, Integer minLevel, boolean mastered, Integer masterXP, Stats baseStats, GrowthRate classGrowthRate) {
         this.minLevel = minLevel;
         this.mastered = mastered;
         this.className = className;
         this.classXP = classXP;
+        this.masterXP = masterXP;
         this.baseStats = baseStats;
         this.classGrowthRate = classGrowthRate;
     }
 
-    private boolean canMaster(){
+    private boolean canMaster() {
         return this.classXP >= this.masterXP;
     }
 
     @Override
     public void master(FECharacter character) {
-        if(canMaster()){
+        if (canMaster()) {
             mastered = true;
         }
     }
