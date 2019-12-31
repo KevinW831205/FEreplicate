@@ -6,10 +6,6 @@ import com.github.kevinw831205.Character.*;
 import java.util.List;
 
 public class Commoner extends UniqueClass {
-
-//    private final GrowthRate classGrowthRate = new GrowthRateBuilder().build();
-//    private final Stats baseStats = new StatsBuilder().setMovement(4).build();
-
     public Commoner() {
         this(
                 "Commoner",
@@ -23,11 +19,6 @@ public class Commoner extends UniqueClass {
 
     public Commoner(String className, Integer classXP, Integer minLevel, boolean hasMaster, Stats baseStats, GrowthRate classGrowthRate) {
         super(className, classXP, minLevel, hasMaster, baseStats, classGrowthRate);
-    }
-
-    @Override
-    public GrowthRate getBaseGrowthRate() {
-        return null;
     }
 
     @Override

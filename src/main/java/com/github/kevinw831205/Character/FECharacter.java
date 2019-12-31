@@ -31,7 +31,6 @@ public class FECharacter {
         this.weaponSkillLevel = weaponSkillLevel;
         this.gender = gender;
         this.isAlive = true;
-
         this.abilities = new ArrayList<>();
     }
 
@@ -40,7 +39,7 @@ public class FECharacter {
     }
 
     public boolean switchClass(CharacterClass target){
-        if(! target.equals(characterClass)){
+        if(! target.equals(characterClass) && changeableClass.contains(target) ){
             this.characterClass = target;
             return true;
         }
