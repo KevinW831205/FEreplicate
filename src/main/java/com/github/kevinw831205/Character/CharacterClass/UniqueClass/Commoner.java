@@ -12,13 +12,14 @@ public class Commoner extends UniqueClass {
                 0,
                 0,
                 false,
+                20,
                 new StatsBuilder().setMovement(4).build(),
                 new GrowthRateBuilder().build()
         );
     }
 
-    public Commoner(String className, Integer classXP, Integer minLevel, boolean hasMaster, Stats baseStats, GrowthRate classGrowthRate) {
-        super(className, classXP, minLevel, hasMaster, baseStats, classGrowthRate);
+    public Commoner(String className, Integer classXP, Integer minLevel, boolean hasMaster, Integer MasterXp, Stats baseStats, GrowthRate classGrowthRate) {
+        super(className, classXP, minLevel, hasMaster, MasterXp, baseStats, classGrowthRate);
     }
 
     @Override

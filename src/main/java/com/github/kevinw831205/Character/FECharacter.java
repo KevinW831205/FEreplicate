@@ -67,9 +67,9 @@ public class FECharacter {
     }
 
     public void gainClassXp(Integer xp){
-        if(this.characterClass.isMastered()){
-
+        if(!this.characterClass.isMastered()){
+            this.characterClass.gainXP(xp);
+            this.characterClass.master(this);
         }
-        this.characterClass.gainXP(xp);
     }
 }
