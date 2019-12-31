@@ -6,6 +6,8 @@ import com.github.kevinw831205.Character.*;
 import java.util.List;
 
 public class Commoner extends UniqueClass {
+    private Integer masteryXp = 20;
+
     public Commoner() {
         this(
                 "Commoner",
@@ -26,5 +28,18 @@ public class Commoner extends UniqueClass {
         System.out.println("commoner mastered");
         super.mastered(null,null);
         abilities.add(new HP_5());
+    }
+
+    @Override
+    public Integer getMasteryXp() {
+        return this.masteryXp;
+    }
+
+    @Override
+    public void gainXP(int xp) {
+        super.gainXP(xp);
+        if(super.getClassXP() >= masteryXp){
+            this.mastered();
+        }
     }
 }
