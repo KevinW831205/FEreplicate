@@ -58,6 +58,13 @@ public class FECharacter {
         return equippedAbilities;
     }
 
+    public void equipAbility(Integer slot, Ability ability){
+        equippedAbilities[slot].unEquip(this);
+        equippedAbilities[slot] = ability;
+        equippedAbilities[slot].equip(this);
+
+    }
+
     public List<Art> getArts() {
         return arts;
     }

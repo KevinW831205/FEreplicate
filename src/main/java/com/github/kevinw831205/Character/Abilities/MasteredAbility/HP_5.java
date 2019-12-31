@@ -10,9 +10,8 @@ public class HP_5 extends MasteredAbility {
     Stats HP_5Bonus = new StatsBuilder().setMaxHP(5).build();
 
     @Override
-    public void equip(FECharacter target, int abilitySlot) {
+    public void equip(FECharacter target) {
         if(target.getAbilities().contains(this)){
-            target.getEquippedAbilities()[abilitySlot] = this;
             target.getStats().addStats(this.HP_5Bonus);
         }
     }

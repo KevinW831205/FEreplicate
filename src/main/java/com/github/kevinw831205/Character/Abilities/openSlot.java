@@ -9,9 +9,7 @@ public class openSlot implements Ability {
     }
 
     @Override
-    public void equip(FECharacter target, int abilitySlot) {
-        target.getEquippedAbilities()[abilitySlot].unEquip(target);
-        target.getEquippedAbilities()[abilitySlot] = this;
+    public void equip(FECharacter target) {
     }
 
     @Override
