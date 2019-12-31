@@ -6,7 +6,7 @@ import com.github.kevinw831205.Character.StatsBuilder;
 
 import java.util.Objects;
 
-public class HP_5 extends MasterAbility{
+public class HP_5 extends MasteredAbility {
     Stats HP_5Bonus = new StatsBuilder().setMaxHP(5).build();
 
     @Override

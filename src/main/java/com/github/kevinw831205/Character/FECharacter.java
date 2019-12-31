@@ -1,6 +1,6 @@
 package com.github.kevinw831205.Character;
 
-import com.github.kevinw831205.Character.Abilities.CharacterAbilities.openSlot;
+import com.github.kevinw831205.Character.Abilities.openSlot;
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
 import com.github.kevinw831205.Character.WeaponSkillLevel.WeaponSkillLevel;
 
