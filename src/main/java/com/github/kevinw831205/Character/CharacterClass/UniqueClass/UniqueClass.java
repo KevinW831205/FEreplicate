@@ -1,10 +1,7 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
-import com.github.kevinw831205.Character.Ability;
-import com.github.kevinw831205.Character.Art;
+import com.github.kevinw831205.Character.*;
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
-import com.github.kevinw831205.Character.GrowthRate;
-import com.github.kevinw831205.Character.Stats;
 
 import java.util.List;
 
@@ -27,7 +24,7 @@ abstract public class UniqueClass implements CharacterClass {
     }
 
     @Override
-    public void mastered(List<Ability> abilities, List<Art> arts) {
+    public void mastered(FECharacter character) {
         mastered = true;
     }
 

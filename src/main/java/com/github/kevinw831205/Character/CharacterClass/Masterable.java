@@ -1,12 +1,9 @@
 package com.github.kevinw831205.Character.CharacterClass;
 
-import com.github.kevinw831205.Character.Ability;
-import com.github.kevinw831205.Character.Art;
-
-import java.util.List;
+import com.github.kevinw831205.Character.FECharacter;
 
 public interface Masterable {
-    void mastered(List<Ability> abilities, List<Art> arts);
+    void mastered(FECharacter character);
     /*
 
     Issues:

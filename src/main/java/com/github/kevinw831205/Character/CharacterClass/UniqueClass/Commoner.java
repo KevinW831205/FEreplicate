@@ -3,8 +3,6 @@ package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 import com.github.kevinw831205.Character.Abilities.MasteredAbility.HP_5;
 import com.github.kevinw831205.Character.*;
 
-import java.util.List;
-
 public class Commoner extends UniqueClass {
     private Integer masteryXp = 20;
 
@@ -24,10 +22,10 @@ public class Commoner extends UniqueClass {
     }
 
     @Override
-    public void mastered(List<Ability> abilities, List<Art> arts) {
+    public void mastered(FECharacter character) {
         System.out.println("commoner mastered");
-        super.mastered(null,null);
-        abilities.add(new HP_5());
+        super.mastered(null);
+        character.getAbilities().add(new HP_5());
     }
 
     @Override
@@ -38,8 +36,8 @@ public class Commoner extends UniqueClass {
     @Override
     public void gainXP(int xp) {
         super.gainXP(xp);
-        if(super.getClassXP() >= masteryXp){
-            this.mastered();
-        }
+//        if(super.getClassXP() >= masteryXp){
+//            this.mastered();
+//        }
     }
 }
