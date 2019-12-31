@@ -65,4 +65,11 @@ public class FECharacter {
     public Stats getStats() {
         return stats;
     }
+
+    public void gainClassXp(Integer xp){
+        if(this.characterClass.isMastered()){
+
+        }
+        this.characterClass.gainXP(xp);
+    }
 }

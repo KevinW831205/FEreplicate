@@ -22,8 +22,8 @@ public class Commoner extends UniqueClass {
     }
 
     @Override
-    public void mastered(FECharacter character) {
-        super.mastered(null);
+    public void master(FECharacter character) {
+        super.master(null);
         character.getAbilities().add(new HP_5());
     }
 

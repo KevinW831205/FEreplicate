@@ -15,7 +15,7 @@ public class HP_5Test {
         FECharacter testCharacter = new FECharacter("test",new Commoner(),new StatsBuilder().setMaxHP(5).build(), null,null,null);
 
         //when
-        testCharacter.getCharacterClass().mastered(testCharacter);
+        testCharacter.getCharacterClass().master(testCharacter);
 
         //then
         Assert.assertTrue(testCharacter.getAbilities().contains(new HP_5()));

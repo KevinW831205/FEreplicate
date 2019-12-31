@@ -1,9 +1,9 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
-import com.github.kevinw831205.Character.*;
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
-
-import java.util.List;
+import com.github.kevinw831205.Character.FECharacter;
+import com.github.kevinw831205.Character.GrowthRate;
+import com.github.kevinw831205.Character.Stats;
 
 abstract public class UniqueClass implements CharacterClass {
 
@@ -24,7 +24,7 @@ abstract public class UniqueClass implements CharacterClass {
     }
 
     @Override
-    public void mastered(FECharacter character) {
+    public void master(FECharacter character) {
         mastered = true;
     }
 
@@ -53,6 +53,7 @@ abstract public class UniqueClass implements CharacterClass {
         return classXP;
     }
 
+    @Override
     public boolean isMastered() {
         return mastered;
     }

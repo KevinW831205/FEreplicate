@@ -15,4 +15,6 @@ public interface CharacterClass extends Masterable {
     void gainXP(int xp);
 
     Integer getClassXP();
+
+    boolean isMastered();
 }

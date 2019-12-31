@@ -3,7 +3,7 @@ package com.github.kevinw831205.Character.CharacterClass;
 import com.github.kevinw831205.Character.FECharacter;
 
 public interface Masterable {
-    void mastered(FECharacter character);
+    void master(FECharacter character);
     /*
 
     Issues:
