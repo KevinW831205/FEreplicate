@@ -1,6 +1,6 @@
 package com.github.kevinw831205.Character;
 
-import com.github.kevinw831205.Character.Abilities.openSlot;
+import com.github.kevinw831205.Character.Abilities.OpenSlot;
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
 import com.github.kevinw831205.Character.WeaponSkillLevel.WeaponSkillLevel;
 
@@ -19,7 +19,7 @@ public class FECharacter {
     private boolean isAlive;
     private Gender gender;
     private ArrayList<Ability> abilities;
-    private Ability[] equippedAbilities = new Ability[]{new openSlot(), new openSlot(), new openSlot(), new openSlot(), new openSlot()};
+    private Ability[] equippedAbilities = new Ability[]{new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot()};
     private ArrayList<Art> arts;
     private Crest crest;
 
@@ -62,7 +62,6 @@ public class FECharacter {
         equippedAbilities[slot].unEquip(this);
         equippedAbilities[slot] = ability;
         equippedAbilities[slot].equip(this);
-
     }
 
     public List<Art> getArts() {

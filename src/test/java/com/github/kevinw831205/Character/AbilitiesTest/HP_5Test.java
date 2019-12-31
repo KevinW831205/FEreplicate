@@ -1,6 +1,7 @@
 package com.github.kevinw831205.Character.AbilitiesTest;
 
 import com.github.kevinw831205.Character.Abilities.MasteredAbility.HP_5;
+import com.github.kevinw831205.Character.Abilities.OpenSlot;
 import com.github.kevinw831205.Character.Ability;
 import com.github.kevinw831205.Character.CharacterClass.UniqueClass.Commoner;
 import com.github.kevinw831205.Character.FECharacter;
@@ -31,7 +32,11 @@ public class HP_5Test {
         Assert.assertEquals(Integer.valueOf(10), actualHP);
 
         //when
-        testCharacter.getEquippedAbilities()[0].unEquip(testCharacter);
+        testCharacter.equipAbility(0, new OpenSlot());
+
+        //then
+//        Assert.assertEquals(new OpenSlot(), testCharacter.getEquippedAbilities()[0]);
+        Assert.assertEquals(Integer.valueOf(5), actualHP);
 
     }
 

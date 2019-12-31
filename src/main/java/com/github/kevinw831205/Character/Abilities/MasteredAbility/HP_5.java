@@ -11,16 +11,15 @@ public class HP_5 extends MasteredAbility {
 
     @Override
     public void equip(FECharacter target) {
-        if(target.getAbilities().contains(this)){
+        if (target.getAbilities().contains(this)) {
             target.getStats().addStats(this.HP_5Bonus);
         }
     }
 
     @Override
     public void unEquip(FECharacter target) {
-        if(target.getAbilities().contains(this)){
-            target.getStats().subtractStats(this.HP_5Bonus);
-        }
+        System.out.println("unEquipping HP_5");
+        target.getStats().subtractStats(this.HP_5Bonus);
     }
 
     @Override

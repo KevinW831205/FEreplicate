@@ -84,7 +84,7 @@ public class StatsTest {
                 .setMovement(6)
                 .build();
 
-        Assert.assertEquals(stats1, expected);
+        Assert.assertEquals(expected, stats1);
     }
 
     @Test
@@ -119,6 +119,8 @@ public class StatsTest {
                 .setCharm(4)
                 .setMovement(8)
                 .build();
+
+        Assert.assertEquals(expected, stats1);
     }
 
     @Test
