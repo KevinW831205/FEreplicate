@@ -18,10 +18,15 @@ public class EquippedAbilities {
         equippedAbilities[4] = ability5;
     }
 
-    public void equipAbility(FECharacter target, Ability ability, int slot){
-        target.getEquippedAbilities();
+    public void equipAbility(FECharacter target, Ability ability, int slot) {
+        slot = slot-1;
+        equippedAbilities[slot].unEquip(target);
+        equippedAbilities[slot] = ability;
         ability.equip(target);
     }
 
-
+    public Ability slot(int slot){
+        System.out.println(slot);
+        return equippedAbilities[slot-1];
+    }
 }

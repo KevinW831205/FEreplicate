@@ -24,20 +24,20 @@ public class HP_5Test {
 
         //when
         Ability abilityToEquip = testCharacter.getAbilities().get(0);
-        testCharacter.equipAbility(0, abilityToEquip);
+        testCharacter.getEquippedAbilities().equipAbility(testCharacter, abilityToEquip, 1);
         Integer actualHP = testCharacter.getStats().getMaxHP();
 
         //then
-        Assert.assertEquals(new HP_5(),testCharacter.getEquippedAbilities()[0]);
+        Assert.assertEquals(new HP_5(),testCharacter.getEquippedAbilities().slot(1));
         Assert.assertEquals(Integer.valueOf(10), actualHP);
 
         //when
-        testCharacter.equipAbility(0, new OpenSlot());
+        testCharacter.getEquippedAbilities().equipAbility(testCharacter, new OpenSlot(),1);
         actualHP = testCharacter.getStats().getMaxHP();
 
         //then
-        Assert.assertEquals(new OpenSlot(), testCharacter.getEquippedAbilities()[0]);
         Assert.assertEquals(Integer.valueOf(5), actualHP);
+        Assert.assertEquals(new OpenSlot(), testCharacter.getEquippedAbilities().slot(1));
 
     }
 
