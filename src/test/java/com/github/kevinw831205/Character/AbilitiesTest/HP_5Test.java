@@ -33,6 +33,7 @@ public class HP_5Test {
 
         //when
         testCharacter.equipAbility(0, new OpenSlot());
+        actualHP = testCharacter.getStats().getMaxHP();
 
         //then
 //        Assert.assertEquals(new OpenSlot(), testCharacter.getEquippedAbilities()[0]);
