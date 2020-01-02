@@ -21,6 +21,11 @@ public class EquippedAbilities {
     }
 
     public void equipAbility(FECharacter target, Ability ability, int slot) {
+        if(slot<1 || slot>5){
+            System.out.println("Invalid equip");
+            return;
+        }
+
         slot = slot-1;
         equippedAbilities[slot].unEquip(target);
         equippedAbilities[slot] = ability;
