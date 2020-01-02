@@ -55,6 +55,9 @@ public class FECharacter {
     }
 
     public Ability[] getEquippedAbilities(){
+        for(Ability ability : equippedAbilities){
+            System.out.println(ability);
+        }
         return equippedAbilities;
     }
 

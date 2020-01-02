@@ -18,6 +18,11 @@ public class OpenSlot implements Ability {
     }
 
     @Override
+    public String toString() {
+        return "OpenSlot";
+    }
+
+    @Override
     public int hashCode() {
         return super.hashCode();
     }
