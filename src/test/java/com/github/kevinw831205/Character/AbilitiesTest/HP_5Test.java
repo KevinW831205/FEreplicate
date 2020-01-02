@@ -37,6 +37,7 @@ public class HP_5Test {
 
         //then
         Assert.assertEquals(Integer.valueOf(5), actualHP);
+        System.out.println(testCharacter.getEquippedAbilities());
         Assert.assertEquals(new OpenSlot(), testCharacter.getEquippedAbilities().slot(1));
 
     }

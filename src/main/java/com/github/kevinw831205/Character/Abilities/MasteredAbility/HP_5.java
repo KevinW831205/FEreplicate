@@ -7,6 +7,7 @@ import com.github.kevinw831205.Character.StatsBuilder;
 import java.util.Objects;
 
 public class HP_5 extends MasteredAbility {
+    String abilityName = "HP+5";
     Stats HP_5Bonus = new StatsBuilder().setMaxHP(5).build();
 
     @Override
@@ -18,7 +19,6 @@ public class HP_5 extends MasteredAbility {
 
     @Override
     public void unEquip(FECharacter target) {
-        System.out.println("unEquipping HP_5");
         target.getStats().subtractStats(this.HP_5Bonus);
     }
 
@@ -27,11 +27,17 @@ public class HP_5 extends MasteredAbility {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         HP_5 hp_5 = (HP_5) o;
-        return Objects.equals(HP_5Bonus, hp_5.HP_5Bonus);
+        return Objects.equals(abilityName, hp_5.abilityName) &&
+                Objects.equals(HP_5Bonus, hp_5.HP_5Bonus);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(HP_5Bonus);
+        return Objects.hash(abilityName, HP_5Bonus);
+    }
+
+    @Override
+    public String toString() {
+        return this.abilityName;
     }
 }

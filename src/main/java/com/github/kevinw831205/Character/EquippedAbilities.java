@@ -2,6 +2,8 @@ package com.github.kevinw831205.Character;
 
 import com.github.kevinw831205.Character.Abilities.OpenSlot;
 
+import java.util.Arrays;
+
 public class EquippedAbilities {
 
     Ability[] equippedAbilities = new Ability[5];
@@ -26,7 +28,13 @@ public class EquippedAbilities {
     }
 
     public Ability slot(int slot){
-        System.out.println(slot);
         return equippedAbilities[slot-1];
+    }
+
+    @Override
+    public String toString() {
+        return "EquippedAbilities{" +
+                "equippedAbilities=" + Arrays.toString(equippedAbilities) +
+                '}';
     }
 }
