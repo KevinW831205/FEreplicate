@@ -70,4 +70,14 @@ abstract public class UniqueClass implements CharacterClass {
     public Integer getMasteryXP() {
         return this.masteryXP;
     }
+
+    @Override
+    public void getClassAbilities(FECharacter target) {
+
+    }
+
+    @Override
+    public void removeClassAbilities(FECharacter target) {
+
+    }
 }

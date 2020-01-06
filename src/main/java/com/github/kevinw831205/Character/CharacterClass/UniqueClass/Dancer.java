@@ -1,5 +1,6 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
+import com.github.kevinw831205.Character.FECharacter;
 import com.github.kevinw831205.Character.GrowthRate;
 import com.github.kevinw831205.Character.Stats;
 
@@ -21,5 +22,11 @@ public class Dancer extends UniqueClass{
         super(className, classXP, minLevel, mastered, masteryXP, baseStats, classGrowthRate);
     }
 
+    @Override
+    public void getClassAbilities(FECharacter target) {
+    }
 
+    @Override
+    public void removeClassAbilities(FECharacter target) {
+    }
 }

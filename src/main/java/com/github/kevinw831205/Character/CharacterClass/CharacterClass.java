@@ -1,5 +1,6 @@
 package com.github.kevinw831205.Character.CharacterClass;
 
+import com.github.kevinw831205.Character.FECharacter;
 import com.github.kevinw831205.Character.GrowthRate;
 import com.github.kevinw831205.Character.Stats;
 
@@ -18,7 +19,7 @@ public interface CharacterClass extends Masterable {
 
     boolean isMastered();
 
-//    void getAbilities();
-//
-//    void removeAbilities();
+    void getClassAbilities(FECharacter target);
+
+    void removeClassAbilities(FECharacter target);
 }
