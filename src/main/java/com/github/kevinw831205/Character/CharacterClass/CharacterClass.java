@@ -17,4 +17,8 @@ public interface CharacterClass extends Masterable {
     Integer getClassXP();
 
     boolean isMastered();
+
+//    void getAbilities();
+//
+//    void removeAbilities();
 }
