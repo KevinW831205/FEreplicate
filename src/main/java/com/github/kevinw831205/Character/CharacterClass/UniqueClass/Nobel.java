@@ -1,39 +1,29 @@
-//package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
-//
-//import com.github.kevinw831205.Character.GrowthRate;
-//import com.github.kevinw831205.Character.GrowthRateBuilder;
-//import com.github.kevinw831205.Character.Stats;
-//import com.github.kevinw831205.Character.StatsBuilder;
-//
-//public class Nobel extends UniqueClass {
-//
-//    public Nobel() {
-//        this(
-//                new StatsBuilder().setMovement(4).build(),
-//                "Nobel",
-//                0,
-//                0,
-//                new GrowthRateBuilder().build(),
-//                false
-//        );
-//    }
-//
-//    private Nobel(Stats stats, String className, Integer minLevel, Integer classXp, GrowthRate growthRate, Boolean hasMastered) {
-//        this.baseStats = stats;
-//        this.className = className;
-//        this.classXP = classXp;
-//        this.classGrowthRate = growthRate;
-//        this.hasMastered = hasMastered;
-//        this.minLevel = minLevel;
-//    }
-//
-//    @Override
-//    public String getClassName() {
-//        return this.className;
-//    }
-//
-//    @Override
-//    public GrowthRate getBaseGrowthRate() {
-//        return this.classGrowthRate;
-//    }
-//}
+package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
+
+import com.github.kevinw831205.Character.*;
+import com.github.kevinw831205.Character.Abilities.MasteredAbility.HP_5;
+
+public class Nobel extends UniqueClass {
+
+    public Nobel() {
+        this(
+                "Nobel",
+                0,
+                0,
+                false,
+                20,
+                new StatsBuilder().setMovement(4).build(),
+                new GrowthRateBuilder().build()
+        );
+    }
+
+    public Nobel(String className, Integer classXP, Integer minLevel, boolean mastered, Integer masteryXP, Stats baseStats, GrowthRate classGrowthRate) {
+        super(className, classXP, minLevel, mastered, masteryXP, baseStats, classGrowthRate);
+    }
+
+    @Override
+    public void master(FECharacter character) {
+        super.master(null);
+        character.getAbilities().add(new HP_5());
+    }
+}

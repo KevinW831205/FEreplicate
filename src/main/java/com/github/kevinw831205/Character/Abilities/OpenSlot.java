@@ -17,7 +17,6 @@ public class OpenSlot implements Ability {
 
     @Override
     public void unEquip(FECharacter target) {
-
     }
 
     @Override
