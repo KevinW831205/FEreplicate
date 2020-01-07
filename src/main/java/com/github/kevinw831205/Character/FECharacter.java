@@ -23,6 +23,7 @@ public class FECharacter {
     private EquippedAbilities equippedAbilities = new EquippedAbilities();
     private ArrayList<Art> arts;
     private Crest crest;
+    private boolean hasMoved = false;
 
     public FECharacter(String name, CharacterClass characterClass, Stats stats, Inventory inventory, WeaponSkillLevel weaponSkillLevel, Gender gender) {
         this.name = name;
