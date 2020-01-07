@@ -1,4 +1,4 @@
 package com.github.kevinw831205.Target;
 
-public interface EnemyTarget {
+public interface EnemyTarget extends FETarget {
 }

@@ -3,11 +3,12 @@ package com.github.kevinw831205.Character.Abilities;
 import com.github.kevinw831205.Character.FECharacter;
 import com.github.kevinw831205.Character.FECharacter;
 import com.github.kevinw831205.Target.FETarget;
+import com.github.kevinw831205.Target.FriendlyTarget;
 
-public class Dance implements UseAbleAbility{
+public class Dance extends FriendlyTargetAbility{
 
     @Override
-    public void use(FETarget x) {
+    public void use(FriendlyTarget x) {
 
     }
 
