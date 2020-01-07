@@ -1,5 +1,6 @@
 package com.github.kevinw831205.Character;
 
+import com.github.kevinw831205.Character.Abilities.Ability;
 import com.github.kevinw831205.Character.Abilities.OpenSlot;
 
 import java.util.Arrays;
@@ -25,7 +26,6 @@ public class EquippedAbilities {
             System.out.println("Invalid equip");
             return;
         }
-
         slot = slot-1;
         equippedAbilities[slot].unEquip(target);
         equippedAbilities[slot] = ability;

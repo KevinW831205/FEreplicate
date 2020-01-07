@@ -2,7 +2,7 @@ package com.github.kevinw831205.Character.AbilitiesTest;
 
 import com.github.kevinw831205.Character.Abilities.MasteredAbility.HP_5;
 import com.github.kevinw831205.Character.Abilities.OpenSlot;
-import com.github.kevinw831205.Character.Ability;
+import com.github.kevinw831205.Character.Abilities.Ability;
 import com.github.kevinw831205.Character.CharacterClass.UniqueClass.Commoner;
 import com.github.kevinw831205.Character.FECharacter;
 import com.github.kevinw831205.Character.StatsBuilder;
