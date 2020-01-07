@@ -17,11 +17,17 @@ public class Dance extends OwnTargetAbility{
         hasSpecialDanceEffect = false;
     }
 
+    public void setHasSpecialDanceEffect(boolean hasSpecialDanceEffect) {
+        this.hasSpecialDanceEffect = hasSpecialDanceEffect;
+    }
+
     @Override
     public void use(OwnUnit target) {
         target.moveTrue();
         if(hasSpecialDanceEffect){
             target.getStats().addStats(new StatsBuilder().setDexterity(4).setSpeed(4).setLuck(4).build());
+
+            //battle over remove
         }
     }
 
@@ -44,4 +50,6 @@ public class Dance extends OwnTargetAbility{
     public void unEquip(FECharacter target) {
 
     }
+
+
 }
