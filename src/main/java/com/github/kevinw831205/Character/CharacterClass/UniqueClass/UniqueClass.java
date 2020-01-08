@@ -80,4 +80,7 @@ abstract public class UniqueClass implements CharacterClass {
     public void removeClassAbilities(FECharacter target) {
 
     }
+
+    abstract public boolean canPromote(FECharacter characterToPromote);
+
 }

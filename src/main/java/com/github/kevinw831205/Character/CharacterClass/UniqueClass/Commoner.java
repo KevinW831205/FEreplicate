@@ -25,4 +25,9 @@ public class Commoner extends UniqueClass {
         super.master(null);
         character.getAbilities().add(new HP_5());
     }
+
+    @Override
+    public boolean canPromote(FECharacter characterToPromote) {
+        return false;
+    }
 }
