@@ -1,20 +1,18 @@
 package com.github.kevinw831205.Character.CharacterClass.UniqueClass;
 
-import com.github.kevinw831205.Character.FECharacter;
-import com.github.kevinw831205.Character.GrowthRate;
-import com.github.kevinw831205.Character.Stats;
+import com.github.kevinw831205.Character.*;
 
 public class Dancer extends UniqueClass{
 
     public Dancer() {
         this(
-                null,
-                null,
-                null,
+                "Dancer",
+                0,
+                0,
                 false,
-                null,
-                null,
-                null
+                100,
+                new StatsBuilder().setMovement(6).build(),
+                new GrowthRateBuilder().setHPGrowth(20).setStrengthGrowth(-5).setDefenseGrowth(-5).setResistanceGrowth(-5).setCharmGrowth(10).build()
         );
     }
 
