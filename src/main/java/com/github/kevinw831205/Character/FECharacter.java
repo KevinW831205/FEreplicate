@@ -21,7 +21,7 @@ public class FECharacter {
     private boolean isAlive;
     private Gender gender;
     private ArrayList<Ability> abilities;
-//    private Ability[] equippedAbilities = new Ability[]{new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot()};
+    //    private Ability[] equippedAbilities = new Ability[]{new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot()};
     private EquippedAbilities equippedAbilities = new EquippedAbilities();
     private ArrayList<Art> arts;
     private Crest crest;
@@ -42,8 +42,8 @@ public class FECharacter {
         return name;
     }
 
-    public boolean switchClass(CharacterClass target){
-        if(! target.equals(characterClass) && changeableClass.contains(target) ){
+    public boolean switchClass(CharacterClass target) {
+        if (!target.equals(characterClass) && changeableClass.contains(target)) {
             this.characterClass = target;
             return true;
         }
@@ -70,24 +70,24 @@ public class FECharacter {
         return stats;
     }
 
-    public void gainClassXp(Integer xp){
-        if(!this.characterClass.isMastered()){
+    public void gainClassXp(Integer xp) {
+        if (!this.characterClass.isMastered()) {
             this.characterClass.gainXP(xp);
             this.characterClass.master(this);
         }
     }
 
-    public void moveTrue(){
+    public void moveTrue() {
         this.hasMoved = true;
     }
 
-    public void moveFalse(){
+    public void moveFalse() {
         this.hasMoved = false;
     }
 
-    public void equipAbility(Ability abilityToEquip){
-        if(abilityToEquip instanceof StatsModifyAbility){
-            this.stats.addStats(abilityToEquip.onEquip());
+    public void equipAbility(Ability abilityToEquip) {
+        if (abilityToEquip instanceof StatsModifyAbility) {
+            this.stats.addStats( ((StatsModifyAbility) abilityToEquip).onEquip() );
         }
     }
 }
