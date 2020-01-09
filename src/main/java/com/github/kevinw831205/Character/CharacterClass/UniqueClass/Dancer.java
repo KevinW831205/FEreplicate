@@ -22,9 +22,16 @@ public class Dancer extends UniqueClass{
 
     @Override
     public void getClassAbilities(FECharacter target) {
+        
     }
 
     @Override
     public void removeClassAbilities(FECharacter target) {
+    }
+
+    @Override
+    public boolean canPromote(FECharacter characterToPromote) {
+
+        return false;
     }
 }

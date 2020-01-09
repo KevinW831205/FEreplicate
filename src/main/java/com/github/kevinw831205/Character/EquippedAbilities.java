@@ -7,6 +7,7 @@ import java.util.Arrays;
 
 public class EquippedAbilities {
 
+    //refactor to have this class modify state of character instead
     Ability[] equippedAbilities = new Ability[5];
 
     public EquippedAbilities() {
