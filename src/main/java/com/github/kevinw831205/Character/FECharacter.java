@@ -83,4 +83,8 @@ public class FECharacter {
     public void moveFalse(){
         this.hasMoved = false;
     }
+
+    public void equipAbility(Ability abilityToEquip){
+
+    }
 }
