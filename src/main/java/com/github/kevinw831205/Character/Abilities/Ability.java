@@ -2,9 +2,9 @@ package com.github.kevinw831205.Character.Abilities;
 
 import com.github.kevinw831205.Character.FECharacter;
 
-public interface Ability {
+public interface Ability<T> {
 
-    void equip(FECharacter target);
-    void unEquip(FECharacter target);
+    T onEquip();
+    T onUnEquip();
 
 }

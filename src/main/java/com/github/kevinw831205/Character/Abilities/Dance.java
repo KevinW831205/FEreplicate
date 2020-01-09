@@ -37,12 +37,12 @@ public class Dance extends OwnTargetAbility{
     }
 
     @Override
-    public void equip(FECharacter target) {
+    public void onEquip(FECharacter target) {
 
     }
 
     @Override
-    public void unEquip(FECharacter target) {
+    public void onUnEquip(FECharacter target) {
 
     }
 

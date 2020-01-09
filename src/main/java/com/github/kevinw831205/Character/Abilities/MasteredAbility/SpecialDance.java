@@ -12,14 +12,14 @@ public class SpecialDance extends MasteredAbility{
     }
 
     @Override
-    public void equip(FECharacter target) {
+    public void onEquip(FECharacter target) {
         if(target.getAbilities().contains(this)){
             boundedDance.setHasSpecialDanceEffect(true);
         }
     }
 
     @Override
-    public void unEquip(FECharacter target) {
+    public void onUnEquip(FECharacter target) {
         boundedDance.setHasSpecialDanceEffect(false);
     }
 }
