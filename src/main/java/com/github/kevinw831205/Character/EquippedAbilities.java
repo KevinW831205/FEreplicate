@@ -28,9 +28,9 @@ public class EquippedAbilities {
             return;
         }
         slot = slot-1;
-        equippedAbilities[slot].onUnEquip(target);
+        equippedAbilities[slot].onUnEquip();
         equippedAbilities[slot] = ability;
-        ability.onEquip(target);
+        ability.onEquip();
     }
 
     public Ability slot(int slot){
