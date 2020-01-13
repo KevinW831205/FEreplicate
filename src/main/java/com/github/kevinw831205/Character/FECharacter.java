@@ -1,7 +1,6 @@
 package com.github.kevinw831205.Character;
 
 import com.github.kevinw831205.Character.Abilities.Ability;
-import com.github.kevinw831205.Character.Abilities.StatsModifyAbility;
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
 import com.github.kevinw831205.Character.Equip.EquippedAbilities;
 import com.github.kevinw831205.Character.WeaponSkillLevel.WeaponSkillLevel;
@@ -85,7 +84,12 @@ public class FECharacter {
         this.hasMoved = false;
     }
 
+<<<<<<< HEAD
     public <SomeAbility extends StatsModifyAbility> void equipAbility(SomeAbility abilityToEquip) {
             this.stats.addStats(abilityToEquip.onEquip());
+=======
+    public void equipAbility(Ability abilityToEquip, int slot) {
+        equippedAbilities.equipAbility(this,abilityToEquip, slot);
+>>>>>>> 041eb82cf77afcccd04dc07018346cbd28e4a9fd
     }
 }
