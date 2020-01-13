@@ -3,8 +3,8 @@ package com.github.kevinw831205.Character;
 import com.github.kevinw831205.Character.Abilities.Ability;
 import com.github.kevinw831205.Character.Abilities.StatsModifyAbility;
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
+import com.github.kevinw831205.Character.Equip.EquippedAbilities;
 import com.github.kevinw831205.Character.WeaponSkillLevel.WeaponSkillLevel;
-import com.github.kevinw831205.Target.FriendlyTarget;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,9 +85,7 @@ public class FECharacter {
         this.hasMoved = false;
     }
 
-    public void equipAbility(Ability abilityToEquip) {
-        if (abilityToEquip instanceof StatsModifyAbility) {
-            this.stats.addStats( ((StatsModifyAbility) abilityToEquip).onEquip() );
-        }
+    public <SomeAbility extends StatsModifyAbility> void equipAbility(SomeAbility abilityToEquip) {
+            this.stats.addStats(abilityToEquip.onEquip());
     }
 }

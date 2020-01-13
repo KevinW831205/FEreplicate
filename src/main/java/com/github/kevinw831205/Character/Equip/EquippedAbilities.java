@@ -1,7 +1,8 @@
-package com.github.kevinw831205.Character;
+package com.github.kevinw831205.Character.Equip;
 
 import com.github.kevinw831205.Character.Abilities.Ability;
 import com.github.kevinw831205.Character.Abilities.OpenSlot;
+import com.github.kevinw831205.Character.FECharacter;
 
 import java.util.Arrays;
 
