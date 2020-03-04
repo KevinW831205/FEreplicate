@@ -1,16 +1,17 @@
 package com.github.kevinw831205.Character;
 
 import com.github.kevinw831205.Character.Abilities.Ability;
-import com.github.kevinw831205.Character.Abilities.StatsModifyAbility;
 import com.github.kevinw831205.Character.CharacterClass.CharacterClass;
-import com.github.kevinw831205.Character.Equip.EquippedAbilities;
+import com.github.kevinw831205.Character.Equip.AbilityEquipper;
+import com.github.kevinw831205.Character.Equip.ItemEquipper;
+import com.github.kevinw831205.Character.Items.Item;
 import com.github.kevinw831205.Character.WeaponSkillLevel.WeaponSkillLevel;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-public class FECharacter {
+public class FECharacter implements ItemEquipper, AbilityEquipper {
     private String name;
     private CharacterClass characterClass;
     private Stats stats;
@@ -22,7 +23,6 @@ public class FECharacter {
     private Gender gender;
     private ArrayList<Ability> abilities;
     //    private Ability[] equippedAbilities = new Ability[]{new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot()};
-    private EquippedAbilities equippedAbilities = new EquippedAbilities();
     private ArrayList<Art> arts;
     private Crest crest;
     private boolean hasMoved = false;
@@ -58,9 +58,6 @@ public class FECharacter {
         return abilities;
     }
 
-    public EquippedAbilities getEquippedAbilities() {
-        return equippedAbilities;
-    }
 
     public List<Art> getArts() {
         return arts;
@@ -85,7 +82,34 @@ public class FECharacter {
         this.hasMoved = false;
     }
 
-    public <SomeAbility extends StatsModifyAbility> void equipAbility(SomeAbility abilityToEquip) {
-            this.stats.addStats(abilityToEquip.onEquip());
+
+    @Override
+    public Ability equip(Ability toEquip, int slot) {
+        return null;
+    }
+
+    @Override
+    public Ability unEquip(Ability toUnEquip, int slot) {
+        return null;
+    }
+
+    @Override
+    public Set<Ability> getSlots() {
+        return null;
+    }
+
+    @Override
+    public List<Item> getSlots(){
+        return null;
+    }
+
+    @Override
+    public Item equip(Item toEquip, int slot) {
+        return null;
+    }
+
+    @Override
+    public Item unEquip(Item toUnEquip, int slot) {
+        return null;
     }
 }

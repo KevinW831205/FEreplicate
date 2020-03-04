@@ -4,20 +4,13 @@ import com.github.kevinw831205.Character.Items.Item;
 
 import java.util.List;
 
-public class ItemEquipper implements Equipper<Item> {
+public interface ItemEquipper extends Equipper<Item> {
+    @Override
+    List<Item> getSlots();
 
     @Override
-    public List<Item> getSlots() {
-        return null;
-    }
+    Item equip(Item toEquip, int slot);
 
     @Override
-    public Item equip(Equippable toEquip, int slot) {
-        return null;
-    }
-
-    @Override
-    public Item unEquip(Equippable toUnEquip, int slot) {
-        return null;
-    }
+    Item unEquip(Item toUnEquip, int slot);
 }

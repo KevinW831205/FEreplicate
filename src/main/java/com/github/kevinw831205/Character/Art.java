@@ -1,4 +1,6 @@
 package com.github.kevinw831205.Character;
 
-public interface Art {
+import com.github.kevinw831205.Character.Equip.Equippable;
+
+public interface Art extends Equippable {
 }

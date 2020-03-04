@@ -1,11 +1,9 @@
 package com.github.kevinw831205.Character.Equip;
 
-import java.util.List;
+import java.util.Collection;
 
 public interface Equipper<someEquippable extends Equippable> {
-    List<someEquippable> getSlots();
-    someEquippable equip(Equippable toEquip, int slot);
-    someEquippable unEquip(Equippable toUnEquip, int slot);
-
-
+    Collection<someEquippable> getSlots();
+    someEquippable equip(someEquippable toEquip, int slot);
+    someEquippable unEquip(someEquippable toUnEquip, int slot);
 }
