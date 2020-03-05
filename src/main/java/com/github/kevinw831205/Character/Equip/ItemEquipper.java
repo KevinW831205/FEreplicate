@@ -5,8 +5,7 @@ import com.github.kevinw831205.Character.Items.Item;
 import java.util.List;
 
 public interface ItemEquipper extends Equipper<Item> {
-    @Override
-    List<Item> getSlots();
+    List<Item> getInventory();
 
     @Override
     Item equip(Item toEquip, int slot);

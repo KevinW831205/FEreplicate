@@ -6,8 +6,7 @@ import java.util.Set;
 
 public interface AbilityEquipper extends Equipper<Ability> {
 
-    @Override
-    Set<Ability> getSlots();
+    Set<Ability> getAbilitySlot();
 
     @Override
     Ability equip(Ability toEquip, int slot);

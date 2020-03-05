@@ -21,7 +21,6 @@ public class FECharacter implements ItemEquipper, AbilityEquipper {
     private Integer currentHP;
     private boolean isAlive;
     private Gender gender;
-    private ArrayList<Ability> abilities;
     //    private Ability[] equippedAbilities = new Ability[]{new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot(), new OpenSlot()};
     private ArrayList<Art> arts;
     private Crest crest;
@@ -35,7 +34,6 @@ public class FECharacter implements ItemEquipper, AbilityEquipper {
         this.weaponSkillLevel = weaponSkillLevel;
         this.gender = gender;
         this.isAlive = true;
-        this.abilities = new ArrayList<>();
     }
 
     public String getName() {
@@ -53,11 +51,6 @@ public class FECharacter implements ItemEquipper, AbilityEquipper {
     public CharacterClass getCharacterClass() {
         return characterClass;
     }
-
-    public List<Ability> getAbilities() {
-        return abilities;
-    }
-
 
     public List<Art> getArts() {
         return arts;
@@ -84,6 +77,11 @@ public class FECharacter implements ItemEquipper, AbilityEquipper {
 
 
     @Override
+    public Set<Ability> getAbilitySlot() {
+        return null;
+    }
+
+    @Override
     public Ability equip(Ability toEquip, int slot) {
         return null;
     }
@@ -94,12 +92,7 @@ public class FECharacter implements ItemEquipper, AbilityEquipper {
     }
 
     @Override
-    public Set<Ability> getSlots() {
-        return null;
-    }
-
-    @Override
-    public List<Item> getSlots(){
+    public List<Item> getInventory() {
         return null;
     }
 
