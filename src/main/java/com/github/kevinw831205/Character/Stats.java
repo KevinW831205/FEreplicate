@@ -18,6 +18,7 @@ public class Stats {
     private GrowthRate growthRate;
 
 
+
     public Stats() {
     }
 

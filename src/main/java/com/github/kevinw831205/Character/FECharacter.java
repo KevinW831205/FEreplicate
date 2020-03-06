@@ -83,6 +83,11 @@ public class FECharacter implements ItemEquipper, AbilityEquipper {
 
     @Override
     public Ability equip(Ability toEquip, int slot) {
+//        super.AbilityEquppier.equip();
+//        super.OtherEquipper.equip();
+
+        AbilityEquipper
+
         return null;
     }
 
